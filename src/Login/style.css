@@ -1,0 +1,161 @@
+@media (max-width: 800px) {
+    .modal-content {
+        padding-top: 0 !important;
+    }
+    .ReactModal__Content {
+        inset: 15px !important;
+    }
+    .modal-login-content {
+        width: 100% !important;
+    }
+    .set-time-event ul {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .set-time-event {
+        display: flex;
+        width: 100% !important;
+    }
+    .login-input-modal {
+        margin: 5px !important;
+        width: 94% !important;
+    }
+    .input-div-modal-login {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .set-time-event li {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+    }
+    .set-time-event span {
+        display: flex;
+        writing-mode: vertical-rl;
+        align-items: center;
+    }
+    .add-btn-modal {
+        margin: 3px !important;
+        width: 97% !important;
+    }
+}
+
+.modal-login-content {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#btn-close-modal {
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    font-size: 3rem;
+    outline: none;
+    color: white;
+    line-height: 30px;
+    transition: 0.5s;
+}
+
+#btn-close-modal:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.MyModal-Content form input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.ReactModal__Overlay {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.ReactModal__Content {
+    display: flex;
+    height: fit-content;
+    background-color: transparent !important;
+    justify-content: center;
+}
+
+
+/* =============================================== */
+
+#modal-login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#modal-login h1 {
+    text-align: center;
+    font-family: monospace;
+}
+
+#modal-login h4 {
+    text-align: center;
+    font-family: monospace;
+}
+
+#modal-login h4 a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.input-div-modal-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 97%;
+    margin: 5px;
+}
+
+.set-time-event ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.set-time-event ul span {
+    font-size: 2rem;
+}
+
+.set-time-event li {
+    width: 10%;
+}
+
+.login-input-modal {
+    width: 100%;
+    margin: 5px auto;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* #id-login-email {} */
+
+.add-btn-modal {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}

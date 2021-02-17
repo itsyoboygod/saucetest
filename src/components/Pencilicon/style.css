@@ -1,0 +1,177 @@
+@media (max-width: 800px) {
+    .modal-content {
+        padding-top: 0 !important;
+    }
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#btn-close-modal {
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    font-size: 3rem;
+    outline: none;
+    color: white;
+    line-height: 30px;
+    transition: 0.5s;
+}
+
+#btn-close-modal:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+.MyModal-Content {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+}
+
+.MyModal-Content h1 {
+    margin: 10;
+    font-family: monospace;
+}
+
+.MyModal-Content form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyModal-Content form input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.ReactModal__Overlay {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.ReactModal__Content {
+    display: flex;
+    height: fit-content;
+    background-color: transparent !important;
+    justify-content: center;
+}
+
+.newmodal {
+    display: flex;
+}
+
+#myBtn-pencil {
+    display: flex;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+
+/* =============================================== */
+
+#modal-posts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.input-div-modal {
+    width: 96%;
+    margin: 6px;
+}
+
+.navtop-input-modal {
+    width: 98.5%;
+    margin: 5px auto;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.navtop-file-input-modal-border-doted {
+    display: flex !important;
+    flex-direction: column;
+    width: 97%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: solid 1px;
+    border: 2px dashed grey;
+    justify-content: center;
+}
+
+.navtop-file-input-modal {
+    width: inherit !important;
+    outline: none;
+    padding: 50% 0 50% 0;
+    cursor: pointer;
+    max-width: max-content;
+    margin: inherit;
+}
+
+.clear-prvw {
+    border: none;
+    background-color: lightgray;
+    border-top: 2px dashed grey;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-btn-modal {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#btn-add-post-modal {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: auto;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#btn-add-post-modal:hover {
+    color: white;
+    transition: 0.3s;
+    border: 1px solid lightgray;
+}
+
+#btn-add-post-modal h3 {
+    margin: 10px;
+}

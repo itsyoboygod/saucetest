@@ -1,0 +1,10 @@
+.news-footer {
+    display: block;
+    background-color: lightcoral;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    margin-bottom: 0px;
+    z-index: 999;
+}

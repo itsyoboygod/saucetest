@@ -1,0 +1,155 @@
+@media (max-width: 800px) {
+    .section-main {
+        margin-top: 53px !important;
+    }
+    .section-main {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-section {
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .header-section {
+        font-size: 0.6rem !important;
+    }
+}
+
+.section-main {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 5px;
+    /* background-color: #da552f; */
+}
+
+.section-main h1 {
+    font-family: monospace;
+    margin-left: 10px;
+    text-align: left !important;
+    margin-bottom: 0;
+}
+
+.section-main hr {
+    margin: 0;
+    width: 100%;
+}
+
+.section-main a {
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    font-size: 1rem;
+}
+
+.header-section h1 {
+    filter: none;
+    transition: 0.2s;
+    color: white;
+}
+
+.header-section h1:hover {
+    filter: drop-shadow(5px 2px 5px black);
+    transition: 0.2s;
+}
+
+.section-carrousel-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0px 10px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+#carrousel-static {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.5s ease 0s;
+}
+
+#btn-span-arrow-left {
+    display: flex;
+    margin: 0;
+    line-height: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.move-carrousel-left {
+    transform: translate3d(-100px, 0px, 0px) !important;
+    transition: all 0.5s ease 0s;
+}
+
+.move-carrousel-right {
+    transform: translate3d(-100px, 0px, 0px) !important;
+    transition: all 0.5s ease 0s;
+}
+
+#btn-span-arrow-right {
+    display: flex;
+    margin: 0;
+    line-height: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.section-carrousel-content ul li {
+    display: flex;
+    margin: 0px;
+}
+
+.arrow-span-carrousel-left {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    left: 0px;
+    color: #808080;
+    z-index: 999;
+    position: absolute;
+}
+
+.arrow-span-carrousel-right {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    right: 0px;
+    color: #808080;
+    z-index: 999;
+    position: absolute;
+}
+
+.arrow-span-carrousel-left:hover {
+    border: none;
+    outline: none;
+    filter: drop-shadow(5px 2px 5px white);
+    font-size: 4rem;
+    transition: 0.2s;
+}
+
+.arrow-span-carrousel-right:hover {
+    border: none;
+    outline: none;
+    filter: drop-shadow(-5px 2px 5px white);
+    font-size: 4rem;
+    transition: 0.2s;
+}

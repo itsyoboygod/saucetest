@@ -1,0 +1,227 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5%;
+    background-color: #131313;
+}
+
+@media (max-width: 800px) {
+    .navbar-top {
+        width: 100% !important;
+        position: fixed;
+        /* top: 5px !important; */
+    }
+    .logo-div {
+        display: none !important;
+    }
+    .navtop-input {
+        margin: 10px auto !important;
+    }
+    #modal-posts {
+        align-items: center;
+    }
+    .navtop-input-modal {
+        margin: 10px auto !important;
+    }
+    .input-div-modal {
+        margin: 0px !important;
+    }
+    .notifi-div {
+        width: 50% !important;
+    }
+    #empty-content {
+        margin-top: 50px !important;
+    }
+    #content {
+        width: 99.5% !important;
+    }
+    /* .post-header {} */
+    #user-p-text {
+        margin: 0 auto;
+        line-break: anywhere;
+        margin-left: inherit;
+    }
+    .modal-content {
+        width: 80% !important;
+        padding-top: 10% !important;
+    }
+    .modal {
+        padding-top: 10% !important;
+    }
+    .vote-direction {
+        flex-direction: column !important;
+    }
+    .btn-sidebar {
+        display: none !important;
+    }
+    .input-div {
+        width: 50% !important;
+    }
+}
+
+.navbar-top {
+    display: flex;
+    width: 100%;
+    z-index: 9;
+    top: 0;
+    position: fixed;
+    left: 0;
+    height: 50px;
+    background-color: #303030;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: solid 1px #888;
+    align-items: center;
+    /* border-radius: 5px; */
+}
+
+.navbar-top span {
+    transition: 0.2s;
+}
+
+.navbar-top span:hover {
+    cursor: pointer;
+    filter: drop-shadow(5px 2px 5px black);
+    transition: 0.2s;
+}
+
+.btn-sidebar {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 63px;
+    left: 0px;
+    border-right: 1px solid #a5a5a5;
+}
+
+.btn-sidebar span {
+    padding: 13px;
+    font-size: 1.5rem;
+}
+
+.logo-div {
+    display: flex;
+    width: auto;
+}
+
+.logo-div h1 {
+    margin: 0;
+    font-family: monospace;
+}
+
+.logo-div a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-div a:hover {
+    color: lightgray;
+}
+
+.input-div {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    margin: 0px 0px 0px 9px;
+    background-color: #4b4a4a;
+    justify-content: center;
+    border-radius: 1px;
+}
+
+.input-div form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.input-div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 0;
+    height: 30px;
+    width: 103px;
+    background-color: #303030;
+    outline: none;
+    margin-right: 1px;
+    color: #8b8b8b;
+}
+
+.input-div button:hover {
+    cursor: pointer;
+}
+
+.navtop-input {
+    width: 74%;
+    height: 30px;
+    outline: none;
+    font-family: monospace;
+    border: none;
+}
+
+.notifi-div {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.notifi-div .fa {
+    transition: 0.2s;
+}
+
+.notifi-div .fas {
+    transition: 0.2s;
+}
+
+.notifi-div .fa:hover {
+    color: #4b4a4a;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 2px white);
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+.notifi-div .fas:hover {
+    color: #888;
+    filter: drop-shadow(0px 0px 2px white);
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+.notifi-div a {
+    color: black;
+    margin: 0px;
+}
+
+.notifi-div i {
+    font-family: "FontAwesome" !important;
+    font-style: initial !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a {
+    align-items: center;
+}
+
+.dropdown-content-notifi {
+    display: none;
+    left: -75px !important;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}

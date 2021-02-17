@@ -1,0 +1,203 @@
+@media (max-width: 800px) {
+    .prof-info-box {
+        margin-top: 0px !important;
+        margin-top: 5% !important;
+    }
+    .ad-box {
+        display: none !important;
+    }
+    .right {
+        width: 98% !important;
+    }
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    margin-top: 2%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.prof-info-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: lightslategrey;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 6%;
+    margin-bottom: 0px;
+}
+
+.img-prof {
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+    display: contents;
+}
+
+#profile-input {
+    width: 100px;
+    min-width: 30px;
+    margin: inherit;
+    outline: none;
+    height: 100px;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/saucememes-f125d.appspot.com/o/profile%2F20200618_170549.jpg?alt=media&token=cbf0f380-948c-4815-8cfe-8f944c863008);
+    display: inline-block;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+}
+
+.profile-conf {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.profile-conf i {
+    font-family: "FontAwesome" !important;
+    font-style: initial !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip span {
+    font-family: monospace;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#follower-num-id {
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.dropdown-content-user-follow {
+    display: none;
+    left: -40px !important;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content-user-follow button {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 0px;
+    padding: 12px 16px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip span {
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    font-family: monospace;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.add-btn {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#myBtn {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: grey;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+#myBtn:hover {
+    color: white;
+    transition: 0.2s;
+    border: 1px solid lightgray;
+}
+
+.add-btn h3 {
+    margin: 5px;
+}
+
+.ad-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: lightslategrey;
+    margin: auto;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    margin-top: 6%;
+    margin-bottom: auto;
+}
+
+.ad-box h1 {
+    justify-content: center;
+    flex-direction: column;
+    font-family: monospace;
+    color: yellow;
+}
+
+.ads-links {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.ads-links a {
+    text-decoration: none;
+    color: lightgrey;
+    font-family: monospace;
+}

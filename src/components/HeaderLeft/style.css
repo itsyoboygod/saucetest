@@ -1,0 +1,26 @@
+.header-left {
+    display: flex;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    background-color: grey;
+    justify-content: center;
+    height: 30px;
+}
+
+.header-left h3 {
+    margin: 3px;
+    display: flex;
+}
+
+.header-left a {
+    text-decoration: none;
+    color: black;
+    justify-content: space-around;
+}
+
+.header-left a:hover {
+    border-bottom: solid 2px;
+    transition: 10ms;
+}

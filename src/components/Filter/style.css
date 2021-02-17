@@ -1,0 +1,20 @@
+.search-div {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+#filtered {
+    text-emphasis: none;
+    list-style-type: none;
+}

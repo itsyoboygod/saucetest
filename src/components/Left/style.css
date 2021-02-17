@@ -1,0 +1,55 @@
+.left {
+    display: flex;
+    width: 98%;
+    height: auto;
+    flex-direction: column;
+    margin: 5px;
+    margin-top: 2%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: grey;
+}
+
+.header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid;
+}
+
+.header h3 {
+    margin: 5px;
+    font-family: monospace;
+    font-size: 1.4rem;
+}
+
+#empty-content {
+    display: none;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+#empty-content h1 {
+    margin: auto;
+    text-align: center;
+    opacity: 0.5;
+    font-family: Arial, Helvetica, sans-serif;
+}

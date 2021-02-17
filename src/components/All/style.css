@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+    .all {
+        flex-direction: column-reverse;
+    }
+}
+
+.all {
+    display: flex;
+    width: 99.5%;
+    margin-top: 40px;
+}
