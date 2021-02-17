@@ -43,11 +43,9 @@ function Loginmodal() {
                   type="password"
                 />
               </div>
-              <div className="add-btn-modal">
-                <button type="submit" id="btn-add-post-modal">
-                  <h3>Done</h3>
-                </button>
-              </div>
+              <button type="submit" id="btn-add-post-modal-form">
+                <h4>Done</h4>
+              </button>
             </form>
 
             <h4>

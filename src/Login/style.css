@@ -18,7 +18,7 @@
     }
     .login-input-modal {
         margin: 5px !important;
-        width: 94% !important;
+        width: 96% !important;
     }
     .input-div-modal-login {
         margin: 0 !important;
@@ -91,11 +91,33 @@
 #modal-login {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: auto;
-    background-color: lightgray;
-    border-radius: 5px;
+    background-color: #303030;
+    border: solid 1px #888;
     margin-top: 10px;
+}
+
+#modal-login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-login form button {
+    width: 95%;
+    margin: 5px auto;
+    padding: 0;
+}
+
+#modal-login form button h4 {
+    margin: 5px auto;
+}
+
+#modal-login form button:hover {
+    cursor: pointer;
 }
 
 #modal-login h1 {
@@ -106,6 +128,7 @@
 #modal-login h4 {
     text-align: center;
     font-family: monospace;
+    padding: 0;
 }
 
 #modal-login h4 a {
@@ -117,8 +140,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 97%;
-    margin: 5px;
+    width: 95%;
 }
 
 .set-time-event ul {
@@ -142,20 +164,20 @@
     width: 100%;
     margin: 5px auto;
     height: 30px;
+    padding: 0;
     outline: none;
-    border-radius: 5px;
     border: none;
 }
 
 
 /* #id-login-email {} */
 
-.add-btn-modal {
+.add-btn-modal-form {
     display: flex;
     justify-content: center;
     width: 95%;
+    margin: 0;
     height: auto;
-    margin: 10px;
     background-color: grey;
     border-radius: 5px;
 }
