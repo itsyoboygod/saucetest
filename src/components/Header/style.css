@@ -16,9 +16,6 @@ body {
     .logo-div {
         display: none !important;
     }
-    .navtop-input {
-        margin: 10px auto !important;
-    }
     #modal-posts {
         align-items: center;
     }
@@ -146,10 +143,10 @@ body {
     border: none;
     margin: 0;
     height: 30px;
-    width: 103px;
+    width: 100px;
     background-color: #303030;
     outline: none;
-    margin-right: 1px;
+    margin-right: 2px;
     color: #8b8b8b;
 }
 
@@ -158,8 +155,9 @@ body {
 }
 
 .navtop-input {
-    width: 74%;
+    width: 75%;
     height: 30px;
+    margin-left: 3px;
     outline: none;
     font-family: monospace;
     border: none;
