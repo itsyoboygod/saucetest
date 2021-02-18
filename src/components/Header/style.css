@@ -41,7 +41,7 @@ body {
         margin-left: inherit;
     }
     .modal-content {
-        width: 80% !important;
+        width: 100% !important;
         padding-top: 10% !important;
     }
     .modal {
@@ -61,7 +61,7 @@ body {
 .navbar-top {
     display: flex;
     width: 100%;
-    z-index: 9;
+    z-index: 9999;
     top: 0;
     position: fixed;
     left: 0;

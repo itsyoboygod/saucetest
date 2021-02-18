@@ -132,16 +132,23 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: lightgray;
-    border-radius: 5px;
+    background-color: #303030;
+    border: solid 1px #888;
     margin-top: 10px;
+}
+
+#modal-clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .input-div-modal-clock {
     display: flex;
     justify-content: center;
-    width: 97%;
-    margin: 6px;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0;
 }
 
 .set-time-event ul {
@@ -166,12 +173,13 @@
     margin: 5px auto;
     height: 30px;
     outline: none;
-    border-radius: 5px;
     border: none;
+    padding: 0;
 }
 
 #id-event-title {
-    border: solid;
+    border: solid #000;
+    padding: 0;
 }
 
 .navtop-file-input-modal-border-doted {
@@ -209,23 +217,22 @@
     justify-content: center;
     width: 95%;
     height: auto;
-    margin: 10px;
+    margin: 5px auto;
     background-color: grey;
     border-radius: 5px;
 }
 
 #btn-add-post-modal {
-    width: -webkit-fill-available;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     width: 100%;
-    border: none;
+    border: solid 1px #888;
     outline: none;
     cursor: pointer;
+    padding: 0;
     height: auto;
-    background-color: grey;
-    border-radius: 5px;
+    background-color: #303030;
+    border-radius: 0px;
 }
 
 #btn-add-post-modal:hover {

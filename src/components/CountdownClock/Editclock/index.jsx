@@ -43,7 +43,7 @@ function Editclock({
         style={{
           overlay: {
             zIndex: 99,
-            top: "10px",
+            top: "50px",
             backgroundColor: "rgba(52, 52, 52, 0.8)",
           },
         }}
