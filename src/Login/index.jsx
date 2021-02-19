@@ -7,6 +7,9 @@ Modal.setAppElement("#root");
 
 function Loginmodal() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
+
+
+
   return (
     <div className="Login-panel">
       <button onClick={() => setmodalIsOpen(true)} id="myBtn-login">
@@ -23,6 +26,7 @@ function Loginmodal() {
           },
         }}
       >
+
         <div className="modal-login-content">
           <button id="btn-close-modal" onClick={() => setmodalIsOpen(false)}>
             &times;
