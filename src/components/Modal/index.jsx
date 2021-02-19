@@ -49,7 +49,7 @@ function Newmodal() {
               </div>
             </div>
             <div className="add-btn-modal">
-              <button id="btn-add-post-modal">
+              <button type="submit" id="btn-add-post-modal">
                 <h3>Done</h3>
               </button>
             </div>

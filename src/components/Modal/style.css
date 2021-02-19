@@ -164,17 +164,16 @@
 }
 
 #btn-add-post-modal {
-    width: -webkit-fill-available;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
-    width: 95%;
-    border: none;
+    width: 100%;
+    border: solid 1px #888;
     outline: none;
     cursor: pointer;
+    padding: 0;
     height: auto;
-    background-color: grey;
-    border-radius: 5px;
+    background-color: #303030;
+    border-radius: 0px;
 }
 
 #btn-add-post-modal h3 {
