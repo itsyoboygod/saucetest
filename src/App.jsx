@@ -11,7 +11,7 @@ const App = () => (
     <BrowserRouter>
       <Header />
       <Routes />
-      {/* <NewsFooter/> */}
+      {/* <NewsFooter /> */}
     </BrowserRouter>
   </div>
 );

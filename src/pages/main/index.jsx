@@ -1,66 +1,98 @@
 import React, { Component } from "react";
-import api from "../../services/api";
+// import api from "../../services/api";
+import api from "../../api";
+
 import "./style.css";
 import { Link } from "react-router-dom";
 
 export default class Mainpage extends Component {
   state = {
-    products: [],
-    productInfo: {},
-    page: 1,
+    shows: [],
+    filmsInfo: {},
   };
 
   componentDidMount() {
-    this.loadProducts();
+    this.loadFilms();
   }
 
-  loadProducts = async (page = 1) => {
-    const response = await api.get(`/products?page=${page}`);
+  loadFilms = async () => {
+    const response = await api.get(`/shows`);
 
-    const { docs, ...productInfo } = response.data;
+    const { docs, ...filmsInfo } = response.data;
 
-    this.setState({ products: docs, productInfo, page });
+    this.setState({ products: docs, filmsInfo });
   };
 
-  prevPage = () => {
-    const { page, productInfo } = this.state;
+  // state = {
+  //   products: [],
+  //   productInfo: {},
+  //   page: 1,
+  // };
 
-    if (page === 1) return;
+  // componentDidMount() {
+  //   this.loadProducts();
+  // }
 
-    const pageNumber = page - 1;
+  // loadProducts = async (page = 1) => {
+  //   const response = await api.get(`/products?page=${page}`);
 
-    this.loadProducts(pageNumber);
-  };
-  nextPage = () => {
-    const { page, productInfo } = this.state;
+  //   const { docs, ...productInfo } = response.data;
 
-    if (page === productInfo.pages) return;
+  //   this.setState({ products: docs, productInfo, page });
+  // };
 
-    const pageNumber = page + 1;
+  // prevPage = () => {
+  //   const { page, productInfo } = this.state;
 
-    this.loadProducts(pageNumber);
-  };
+  //   if (page === 1) return;
+
+  //   const pageNumber = page - 1;
+
+  //   this.loadProducts(pageNumber);
+  // };
+  // nextPage = () => {
+  //   const { page, productInfo } = this.state;
+
+  //   if (page === productInfo.pages) return;
+
+  //   const pageNumber = page + 1;
+
+  //   this.loadProducts(pageNumber);
+  // };
 
   render() {
-    const { products, page, productInfo } = this.state;
+    // const { products, page, productInfo } = this.state;
+    const { shows, filmsInfo } = this.state;
+
     return (
-      <div className="product-list">
-        {this.state.products.map((product) => (
-          <article key={product._id}>
-            <strong>{product.title}</strong>
-            <p>{product.description}</p>
-            <Link to={`/products/${product._id}`}>Acessar</Link>
-          </article>
-        ))}
-        <div className="actions">
-          <button disabled={page === 1} onClick={this.prevPage}>
-            Anterior
-          </button>
-          <button disabled={page === productInfo.pages} onClick={this.nextPage}>
-            Proxima
-          </button>
+      <div className="main-content">
+        <div className="films-list">
+          {this.state.shows.map((shows) => (
+            <article key={shows._id}>
+              <strong>{shows.title}</strong>
+              <p>{shows.description}</p>
+              <Link to={`/films/${shows._id}`}>Acessar</Link>
+            </article>
+          ))}
         </div>
       </div>
+      // <div className="product-list">
+      //   {this.state.products.map((product) => (
+      //     <article key={product._id}>
+      //       <strong>{product.title}</strong>
+      //       <p>{product.description}</p>
+      //       <Link to={`/products/${product._id}`}>Acessar</Link>
+      //     </article>
+      //   ))}
+      //   <div className="actions">
+      //     <button disabled={page === 1} onClick={this.prevPage}>
+      //       Anterior
+      //     </button>
+      //     <button disabled={page === productInfo.pages} onClick={this.nextPage}>
+      //       Proxima
+      //     </button>
+      //   </div>
+      // </div>
     );
   }
 }

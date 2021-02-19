@@ -6,6 +6,7 @@ import { isAuthenticated } from "./services/auth";
 import Home from "./Home";
 import All from "./components/All";
 import Login from "./Login";
+import Registerpanel from "./Register";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -25,10 +26,15 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={Home} />{" "}
       <Route path="/All" component={All} />{" "}
-      {/* <Route exact path="/" component={() => <h1>Login</h1>} />
-      <Route path="/signup" component={() => <h1>SignUp</h1>} /> */}
+      {/* <Route exact path="/" component={() => <h1>Login</h1>} /> */}
+      <Route path="/Register" component={Registerpanel} />
       <PrivateRoute path="/app" component={() => <h1>App</h1>} />
-      <Route path="*" component={() => <h1>Page not found</h1>} />
+      <Route
+        path="*"
+        component={() => (
+          <h1 style={{ margin: "15%", color: "white" }}>Page not found :(</h1>
+        )}
+      />
     </Switch>
   </BrowserRouter>
 );

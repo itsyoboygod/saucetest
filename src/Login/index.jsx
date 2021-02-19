@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 Modal.setAppElement("#root");
@@ -37,6 +38,12 @@ function Loginmodal() {
                   type="text"
                 />
                 <input
+                  className="login-input-modal"
+                  placeholder=" phone"
+                  inputmode="number"
+                  pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
+                />
+                <input
                   id="id-login-password"
                   className="login-input-modal"
                   placeholder=" password"
@@ -47,9 +54,12 @@ function Loginmodal() {
                 <h4>Done</h4>
               </button>
             </form>
-
             <h4>
-              Not a member? <a href="#">Register</a>
+              Forgot your password? <a href="/Register">New password</a>
+            </h4>
+            <h4>
+              {/* <Link to={`/Register`}> */}
+              Not a member? <a href="/Register">Register</a>
             </h4>
           </div>
         </div>

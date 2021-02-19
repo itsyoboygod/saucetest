@@ -7,7 +7,7 @@ Modal.setAppElement("#root");
 function Pencilicon() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
   return (
-    <div className="newmodal">
+    <div className="newmodal-pencil">
       <button onClick={() => setmodalIsOpen(true)} id="myBtn-pencil">
         <span class="fa fa-pencil"></span>
       </button>

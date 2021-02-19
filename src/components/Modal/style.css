@@ -74,6 +74,11 @@
     width: 100%;
 }
 
+.newmodal button {
+    color: white;
+    font-family: monospace;
+}
+
 #myBtn {
     display: flex;
     justify-content: center;
@@ -161,7 +166,6 @@
     border-radius: 5px;
 }
 
-<<<<<<< HEAD
 #btn-add-post-modal {
     display: flex;
     justify-content: center;
@@ -174,8 +178,6 @@
     background-color: #303030;
     border-radius: 0px;
 }
-=======
->>>>>>> f4e2d2706a5d218fc326965bcd258a99931ec35e
 
 #btn-add-post-modal h3 {
     margin: 10px;

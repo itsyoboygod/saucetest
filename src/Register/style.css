@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
     .loginpanel-div {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .loginpanel-left {
         width: 100% !important;
@@ -12,73 +12,96 @@
 
 .loginpanel-div {
     display: flex;
+    flex-direction: row;
     margin-top: 50px;
-    background-color: lightgrey;
+    background-color: #303030;
     font-family: monospace;
-    border-radius: 5px;
 }
 
 .loginpanel-left {
     display: flex;
-    background-color: khaki;
+    background-color: #303030;
     width: 50%;
     justify-content: center;
     border-radius: 5px;
+    border: solid 1px #888;
+}
+
+.loginpanel-left h1 {
+    color: white;
 }
 
 .loginpanel-right {
     display: flex;
-    background-color: lavender;
+    background-color: #303030;
     width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    border: solid 1px #888;
+    color: white;
 }
 
-.loginpanel-right input {
-    height: 40px;
-    width: 300px;
-    border-radius: 3px;
-    outline: none;
-    margin: 3px;
-    border: solid 0.1px lightskyblue;
-    background-color: whitesmoke;
-}
-
-.panel-column {
+.loginpanel-right form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.panel-column-top {
+.radio-input {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+}
+
+.radio-input input {
+    margin: 10px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+}
+
+.text-input {
+    height: 40px;
+    width: 300px;
+    outline: none;
+    margin: 3px;
+    background-color: whitesmoke;
+    border: none;
 }
 
 .loginpanel-right a {
     text-decoration: none;
-    color: blue;
+    color: lightskyblue;
 }
 
-.panel-column-bottom {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.loginpanel-right a:hover {
+    opacity: 0.5;
 }
 
 .loginpanel-right button {
     display: flex;
-    background-color: rgb(0, 121, 211);
+    background-color: #303030;
     width: 305px;
-    border: solid 0.1px lightskyblue;
-    border-radius: 5px;
+    border: solid 0.1px #888;
     outline: lightskyblue;
     cursor: pointer;
     color: white;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     font-family: monospace;
     justify-content: center;
+}
+
+.loginpanel-right button:hover {
+    opacity: 0.5;
 }
