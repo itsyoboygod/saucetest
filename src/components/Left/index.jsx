@@ -16,6 +16,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Countdownclock from '../CountdownClock'
 
 import api from "../../services/api";
 
@@ -65,6 +66,7 @@ const Left = () => {
 
   return (
     <div className="left">
+      <Countdownclock/>
       <HeaderLeft />
       <div id="content">
         <div id="each-content">

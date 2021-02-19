@@ -152,19 +152,7 @@
     border-radius: 5px;
 }
 
-#btn-add-post-modal {
-    width: -webkit-fill-available;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    height: auto;
-    background-color: grey;
-    border-radius: 5px;
-}
+
 
 #btn-add-post-modal:hover {
     color: white;

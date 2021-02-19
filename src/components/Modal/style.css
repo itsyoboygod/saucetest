@@ -71,23 +71,21 @@
 
 .newmodal {
     display: flex;
+    width: 100%;
 }
 
 #myBtn {
-    width: -webkit-fill-available;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: auto;
-    border: none;
-    cursor: pointer;
+    width: 100%;
+    margin: 0px;
+    border-top: solid 1px #888 !important;
     outline: none;
-    background-color: grey;
-    border-radius: 5px;
-    font-family: monospace;
-    height: 40px;
-    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 7px;
+    background-color: #303030;
+    border-radius: 0px;
 }
 
 #myBtn:hover {
@@ -163,19 +161,6 @@
     border-radius: 5px;
 }
 
-#btn-add-post-modal {
-    width: -webkit-fill-available;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    width: 95%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    height: auto;
-    background-color: grey;
-    border-radius: 5px;
-}
 
 #btn-add-post-modal h3 {
     margin: 10px;

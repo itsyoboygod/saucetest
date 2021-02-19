@@ -40,11 +40,9 @@ const Right = () => (
         <i className="fas fa-gear"></i>
         <i className="fa fa-sign-out"></i>
       </div>
-      <div className="add-btn">
-        <span>
+      
           <Newmodal />
-        </span>
-      </div>
+       
     </div>
 
     <div className="ad-box">

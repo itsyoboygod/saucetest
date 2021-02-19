@@ -25,10 +25,10 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: lightslategrey;
+    background-color: #303030;
     margin: auto;
-    border-radius: 5px;
-    margin-top: 6%;
+    border: solid 1px #888;
+    margin-top: 5%;
     margin-bottom: 0px;
 }
 
@@ -59,6 +59,7 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    margin: 14px auto;
 }
 
 .profile-conf i {
@@ -145,20 +146,7 @@
     border-radius: 5px;
 }
 
-#myBtn {
-    width: -webkit-fill-available;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    background-color: grey;
-    border-radius: 5px;
-    font-family: monospace;
-}
+
 
 #myBtn:hover {
     color: white;
