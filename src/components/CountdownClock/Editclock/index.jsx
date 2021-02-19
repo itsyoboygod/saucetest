@@ -127,7 +127,6 @@ function Editclock({
                   </li>
                 </ul>
               </div>
-              <div className="add-btn-modal">
                 <button
                   type="submit"
                   id="btn-add-post-modal"
@@ -135,7 +134,6 @@ function Editclock({
                 >
                   <h3>Done</h3>
                 </button>
-              </div>
             </form>
           </div>
         </div>
