@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import All from '../../components/All';
-import api from '../../services/api';
 import './style.css';
 
 

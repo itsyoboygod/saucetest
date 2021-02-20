@@ -8,7 +8,15 @@ Modal.setAppElement("#root");
 function Loginmodal() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
 
+  const loginForm =(e) =>{
+    console.log("formulario alterado!")
+    console.log(e.target.value)
+  }
 
+  const loginUser=()=>{
+    alert("User logado !")
+    loginForm.e.target = ""
+  }
 
   return (
     <div className="Login-panel">
@@ -33,19 +41,20 @@ function Loginmodal() {
           </button>
           <div id="modal-login">
             <h1>LOGIN</h1>
-            <form>
+            <form onChange={loginForm}>
               <div className="input-div-modal-login">
                 <input
                   id="id-login-email"
                   className="login-input-modal"
                   placeholder=" email"
                   type="text"
+                  name="email"
                 />
                 <input
                   className="login-input-modal"
                   placeholder=" phone"
-                  inputmode="number"
-                  pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
+                  type="number"
+                  name="phone"
                 />
                 <input
                   id="id-login-password"
@@ -54,8 +63,8 @@ function Loginmodal() {
                   type="password"
                 />
               </div>
-              <button type="submit" id="btn-add-post-modal-form">
-                <h4>Done</h4>
+              <button type="submit" id="btn-add-post-modal-form" onClick={loginUser}>
+                <h4>Login</h4>
               </button>
             </form>
             <h4>
