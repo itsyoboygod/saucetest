@@ -13,7 +13,7 @@
 .loginpanel-div {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #303030;
     font-family: monospace;
 }
@@ -43,11 +43,35 @@
     color: white;
 }
 
+.loginpanel-right h1 {
+    color: white;
+}
+
 .loginpanel-right form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.loginpanel-right form select {
+    display: flex;
+    border: none;
+    width: 97%;
+    margin: 10px;
+    padding: 0;
+    outline: 0;
+    height: 40px;
+}
+
+.loginpanel-right form select option {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    background-color: #303030;
+    font-size: 1rem;
+    line-height: 10px;
 }
 
 .radio-input {
@@ -58,7 +82,6 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    color: white;
 }
 
 .radio-input input {
@@ -68,6 +91,7 @@
     height: 20px;
     outline: none;
     border: none;
+    mix-blend-mode: color-burn;
 }
 
 .text-input {
@@ -77,6 +101,18 @@
     margin: 3px;
     background-color: whitesmoke;
     border: none;
+}
+
+#id-radio-input-male #text {
+    color: skyblue !important;
+}
+
+#id-radio-input-female {
+    color: skyblue;
+}
+
+#id-radio-input-other {
+    color: skyblue;
 }
 
 .loginpanel-right a {
@@ -104,4 +140,5 @@
 
 .loginpanel-right button:hover {
     opacity: 0.5;
+    transition: 0.5s;
 }
