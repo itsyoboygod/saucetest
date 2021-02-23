@@ -9,7 +9,10 @@ function Pencilicon() {
   return (
     <div className="newmodal-pencil">
       <button onClick={() => setmodalIsOpen(true)} id="myBtn-pencil">
-        <span class="fa fa-pencil"></span>
+        <div className="tooltip">
+          <span class="fa fa-pencil"></span>
+          <span class="tooltiptext tooltip-right">post</span>
+        </div>
       </button>
       <Modal
         isOpen={modalIsOpen}

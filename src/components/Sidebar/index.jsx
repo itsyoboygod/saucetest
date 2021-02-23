@@ -11,13 +11,22 @@ export default class Sidebar extends Component {
       <div className="sidebar">
         <ul>
           <li>
-            <span class="fa fa-globe"></span>
+            <div className="tooltip">
+              <span class="fa fa-globe"></span>
+              <span class="tooltiptext tooltip-right">global</span>
+            </div>
           </li>
           <li>
-            <span class="fa fa-gear"></span>
+            <div className="tooltip">
+              <span class="fa fa-gear"></span>
+              <span class="tooltiptext tooltip-right">config</span>
+            </div>
           </li>
           <li>
-            <span class="fa fa-fire"></span>
+            <div className="tooltip">
+              <span class="fa fa-fire"></span>
+              <span class="tooltiptext tooltip-right">trend</span>
+            </div>
           </li>
           <li style={{ padding: "0" }}>
             <Pencilicon />

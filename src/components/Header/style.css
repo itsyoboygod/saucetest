@@ -168,6 +168,7 @@ body {
     width: 20%;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 1.2rem;
 }
 
 .notifi-div .fa {
@@ -183,14 +184,14 @@ body {
     cursor: pointer;
     filter: drop-shadow(0px 0px 2px white);
     font-size: 1.5rem;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .notifi-div .fas:hover {
     color: #888;
     filter: drop-shadow(0px 0px 2px white);
     font-size: 1.5rem;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .notifi-div a {

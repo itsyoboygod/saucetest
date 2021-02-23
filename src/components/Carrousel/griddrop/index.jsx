@@ -84,11 +84,21 @@ export default function Carrouseldrop() {
       wrap_size.style.width = "350px !important";
       wrap_size.style.height = "150px !important";
       const p_open_grid = document.getElementById("id-p-open-grid");
+      const open_close_grid_btn = document.getElementById(
+        "open-close-grid-btn"
+      );
       p_open_grid.innerHTML = "Close grid";
+      if (p_open_grid.clicked == true) {
+        alert("clicked");
+      }
     }
     // const loadboxDiv = document.getElementsByClassName("loadbox-div");
     // loadboxDiv.style.margin = "25px";
   }
+  // function unwrapStyle() {
+  //   const wrapLi = document.getElementById("id-li-wrap");
+  //   wrapLi.style.flexWrap = "nowrap";
+  // }
 
   return (
     <div className="dropdown">
@@ -117,6 +127,7 @@ export default function Carrouseldrop() {
           onMouseOver={hoverhandle}
           onMouseOut={outhandle}
           onClick={wrapStyle}
+          id="open-close-grid-btn"
         >
           {wrapStyle ? wrapStyle : !wrapStyle}
           <p id="id-p-open-grid">Open grid</p>

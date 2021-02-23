@@ -39,3 +39,79 @@
     cursor: pointer;
     transition: 0.25s;
 }
+
+.fa.fa-globe {
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+}
+
+.fa.fa-gear {
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+}
+
+.fa.fa-fire {
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1rem;
+}
+
+.tooltiptext .tooltip-right {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip span:last-child {
+    font-weight: 300;
+    font-family: monospace;
+}
+
+.tooltip-right {
+    top: 0px;
+    left: 140%;
+}
+
+.tooltip-right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

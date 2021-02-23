@@ -161,3 +161,7 @@
 #btn-add-post-modal h3 {
     margin: 10px;
 }
+
+.fa.fa-pencil {
+    font-family: "fontAwesome";
+}
