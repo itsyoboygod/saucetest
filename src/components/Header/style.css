@@ -204,6 +204,11 @@ body {
     font-style: initial !important;
 }
 
+.user-log-status{
+    margin: 0;
+    padding: 0;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;

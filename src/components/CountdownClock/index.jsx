@@ -11,16 +11,16 @@ const CountdownClock = () => {
   const [HH, setHours] = useState(23);
   const [MI, setMinutes] = useState(59);
   const [SS, setSeconds] = useState(59);
-
+  
   // useEffect(() => {
-  const [title, setTitle] = useState("EVENT TITLE");
-
-  const [now, setNow] = useState(new Date());
-
-  const [eventDate, seteventDate] = useState(
-    new Date(YY, MM - 1, DD, HH, MI, SS)
-  );
-
+    const [title, setTitle] = useState("EVENT TITLE");
+    
+    const [now, setNow] = useState(new Date());
+    
+    const [eventDate, seteventDate] = useState(
+      new Date(YY, MM - 1, DD, HH, MI, SS)
+      );
+      
   const [currentTime, setcurrentTime] = useState(now.getTime());
   const [eventTime, seteventTime] = useState(eventDate.getTime());
 
@@ -45,12 +45,12 @@ const CountdownClock = () => {
   // faltam += toString(h).length ? h + " hr, " : "";
   // faltam += toString(m).length ? m + " min e " : "";
   // faltam += s + " seg";
-
+  
   // if (d + h + m + s > 0) {
-  //   faltam = document.getElementById("contador");
-  //   setTimeout(CountdownClock, 1000);
-  // }
-
+    //   faltam = document.getElementById("contador");
+    //   setTimeout(CountdownClock, 1000);
+    // }
+    
   const eventTitle = (title) => {
     setTitle(title);
   };
@@ -62,19 +62,19 @@ const CountdownClock = () => {
   const eventDay = (DD) => {
     setDays(DD);
   };
-
+  
   const eventHour = (HH) => {
     setHours(HH);
   };
-
+  
   const eventMinute = (MI) => {
     setMinutes(MI);
   };
-
+  
   const eventSecond = (SS) => {
     setSeconds(SS);
   };
-
+  
   return (
     <div>
       <div className="content-clock">
@@ -122,6 +122,7 @@ const CountdownClock = () => {
       </div>
     </div>
   );
-};
+  
+}
 
 export default CountdownClock;

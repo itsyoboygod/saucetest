@@ -32,7 +32,9 @@ const Header = () => (
       </div>
       <div className="notifi-div">
         <a href="#">
+          <div className="user-log-status">
           <i className="fa fa-user"></i>
+          </div>
         </a>
         <div className="dropdown">
           <i id="post-noifi-bell" className="fa fa-bell"></i>

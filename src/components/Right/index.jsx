@@ -45,7 +45,7 @@ const Right = () => (
        
     </div>
 
-    <div className="ad-box">
+    <div className="ad-box-right">
       <h1>#Ad</h1>
       <ul className="ads-links">
         <li>

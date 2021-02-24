@@ -52,6 +52,7 @@
     background-color: black;
     color: white;
     transition: 0.5s;
+    box-shadow: none !important;
 }
 
 .dropdown-header-content-option button:hover {
