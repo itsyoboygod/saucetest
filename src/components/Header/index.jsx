@@ -32,7 +32,7 @@ const Header = () => (
       </div>
       <div className="notifi-div">
         <a href="#">
-          <div className="user-log-status">
+          <div id="user-log-status">
           <i className="fa fa-user"></i>
           </div>
         </a>

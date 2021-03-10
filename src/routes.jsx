@@ -24,6 +24,7 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={Home} />{" "}
       {/* <Route path="/All" component={All} />{" "} */}
+      <PrivateRoute path="/All" component={All}/>
       {/* <Route exact path="/" component={() => <h1>Login</h1>} /> */}
       <Route path="/Register" component={Registerpanel} />
       <Route
@@ -33,7 +34,6 @@ const Routes = () => (
         )}
       />
 
-      <PrivateRoute path="/All" component={All}/>
     </Switch>
   </BrowserRouter>
 );
