@@ -6,7 +6,6 @@ import Newmodal from "../components/Modal";
 import Filter from "../components/Filter";
 import Carrousel from "../components/Carrousel";
 import Header from "../components/Header";
-
 import "./style.css";
 
 export default class Home extends Component {
@@ -20,11 +19,10 @@ export default class Home extends Component {
         {/* <Filter /> */}
 
         {/* <Mainsection /> */}
-        {/* <Topsection />
-        <Newsection />
-        <Randomsection />
-        <Hook />
-        <Filter /> */}
+        {/* <Topsection /> */}
+        {/* <Newsection /> */}
+        {/* <Randomsection /> */}
+        {/* <Hook /> */}
       </div>
     );
   }

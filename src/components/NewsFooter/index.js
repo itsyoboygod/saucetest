@@ -7,7 +7,7 @@ const NewsFooter = () =>
 
 
     <div className="news-footer">
-           <marquee>teste |</marquee>
+           <marquee>teste | teste2 | teste3 | teste4 | teste5 | teste6 </marquee>
     </div>
 </header>
 
