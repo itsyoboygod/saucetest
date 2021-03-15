@@ -1,5 +1,6 @@
 import react, { Component } from "react";
-import Info from "../../Infos/index.";
+// import Info from "../../Infos/index.";
+import Infopost from "../../Infos/Infopost/index.";
 import "./style.css";
 
 export default class Maindrop extends Component {
@@ -13,13 +14,13 @@ export default class Maindrop extends Component {
           <a href="##">
             <button>
               Option 1{" "}
-              <Info/>
+              <Infopost/>
             </button>
           </a>
           <a href="#">
             <button>
               Option 2{" "}
-               <Info/>
+               <Infopost/>
             </button>
             </a>
         </div>

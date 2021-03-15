@@ -152,6 +152,9 @@ body {
 
 .input-div button:hover {
     cursor: pointer;
+    background-color:#272727;
+    transition: 0.5s;
+    
 }
 
 .navtop-input {

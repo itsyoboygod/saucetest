@@ -1,5 +1,6 @@
 import react, { Component } from "react";
 import Loginmodal from "../../../Login";
+import Infoheader from "../../Infos/Infoheader/index.";
 import "./style.css";
 
 export default class Headerdrop extends Component {
@@ -14,7 +15,7 @@ export default class Headerdrop extends Component {
             <button>
               Option 1{" "}
               <a href="#">
-                <span>&#x3F;</span>
+               <Infoheader/>
               </a>
             </button>
           </a>
@@ -22,7 +23,7 @@ export default class Headerdrop extends Component {
             <button>
               Option 2{" "}
               <a href="#">
-                <span>&#x3F;</span>
+              <Infoheader/>
               </a>
             </button>
           </a>

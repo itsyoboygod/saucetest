@@ -1,4 +1,5 @@
 import React, { Component, useState, useEffect, useRef } from "react";
+import Infocarrousel from "../../Infos/Infocarrousel/index.";
 import "./style.css";
 
 export default function Carrouseldrop() {
@@ -111,7 +112,7 @@ export default function Carrouseldrop() {
             {/* {1 + 1 == 1 ? "😁" : "☹️"} */}
             Option 1
             <a href="#">
-              <span>&#x3F;</span>
+              <Infocarrousel/>
             </a>
           </button>
         </a>
@@ -119,7 +120,7 @@ export default function Carrouseldrop() {
           <button>
             Option 2{" "}
             <a href="#">
-              <span>&#x3F;</span>
+              <Infocarrousel/>
             </a>
           </button>
         </a>
