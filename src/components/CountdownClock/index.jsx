@@ -4,6 +4,8 @@ import { Component } from "react";
 import Editclock from "./Editclock";
 import "./style.css";
 
+
+
 const CountdownClock = () => {
   const [YY, setYear] = useState(new Date().getFullYear());
   const [MM, setMonth] = useState(12);
@@ -11,7 +13,8 @@ const CountdownClock = () => {
   const [HH, setHours] = useState(23);
   const [MI, setMinutes] = useState(59);
   const [SS, setSeconds] = useState(59);
-  
+
+
   // useEffect(() => {
     const [title, setTitle] = useState("EVENT TITLE");
     
@@ -74,6 +77,8 @@ const CountdownClock = () => {
   const eventSecond = (SS) => {
     setSeconds(SS);
   };
+
+  
   
   return (
     <div>

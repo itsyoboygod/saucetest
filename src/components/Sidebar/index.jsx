@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Config from "../Config/index.";
 import Pencilicon from "../Pencilicon";
 import "./style.css";
 <link
@@ -17,10 +18,7 @@ export default class Sidebar extends Component {
             </div>
           </li>
           <li>
-            <div className="tooltip">
-              <span class="fa fa-gear"></span>
-              <span class="tooltiptext tooltip-right">config</span>
-            </div>
+           <Config/>
           </li>
           <li>
             <div className="tooltip">

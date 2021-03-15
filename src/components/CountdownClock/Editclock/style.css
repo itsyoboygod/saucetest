@@ -301,9 +301,12 @@
     opacity: 0.5;
     transition: 0.3s;
     border:solid 1px lightcoral !important;
+    color: lightcoral;
 }
 
 #btn-save-clock-modal:hover {
     opacity: 0.5;
     transition: 0.3s;
+    border:solid 1px lightblue !important;
+    color: lightblue;
 }
