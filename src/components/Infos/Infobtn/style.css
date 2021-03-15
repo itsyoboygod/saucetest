@@ -1,0 +1,13 @@
+#span-info {
+font-size: 0.6rem;
+border: solid 1px black;
+padding: 2px 5px 2px 5px;
+border-radius: 50%;
+transition: 0.5s;
+}
+
+#span-info:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}

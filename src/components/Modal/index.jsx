@@ -14,13 +14,6 @@ function Newmodal() {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setmodalIsOpen(false)}
-        style={{
-          overlay: {
-            zIndex: 99,
-            top: "50px",
-            backgroundColor: "rgba(52, 52, 52, 0.8)",
-          },
-        }}
       >
         <div className="modal-content">
           <button id="btn-close-modal" onClick={() => setmodalIsOpen(false)}>

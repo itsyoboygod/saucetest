@@ -104,6 +104,7 @@
     height: fit-content;
     background-color: transparent !important;
     justify-content: center;
+    border: none !important;
 }
 
 .newmodal {
@@ -122,6 +123,11 @@
     padding: 0px;
     margin: 0;
     color: white;
+}
+
+#myBtn-pencil-clock:hover {
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 

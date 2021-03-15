@@ -31,7 +31,7 @@ const Header = () => (
         </form>
       </div>
       <div className="notifi-div">
-        <a href="#">
+        <a href="/Profile">
           <div id="user-log-status">
           <i className="fa fa-user"></i>
           </div>

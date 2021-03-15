@@ -47,9 +47,9 @@ const CountdownClock = () => {
   // faltam += s + " seg";
   
   // if (d + h + m + s > 0) {
-    //   faltam = document.getElementById("contador");
-    //   setTimeout(CountdownClock, 1000);
-    // }
+  //     faltam = document.getElementById("contador");
+  //     setTimeout(CountdownClock, 1000);
+  //   }
     
   const eventTitle = (title) => {
     setTitle(title);

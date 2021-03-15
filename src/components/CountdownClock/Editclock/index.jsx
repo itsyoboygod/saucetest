@@ -45,6 +45,8 @@ function Editclock({
             zIndex: 99,
             top: "50px",
             backgroundColor: "rgba(52, 52, 52, 0.8)",
+            border: "0px !important",
+            border: "none !important",
           },
         }}
       >

@@ -20,6 +20,7 @@ import Countdownclock from '../CountdownClock'
 
 
 import "./style.css";
+import Profile from "../../Profile";
 
 const Left = () => {
 

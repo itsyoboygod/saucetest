@@ -1,0 +1,11 @@
+.random {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.random h1 {
+    text-align: center;
+    font-family: monospace;
+}

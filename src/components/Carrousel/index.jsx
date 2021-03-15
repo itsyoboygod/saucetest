@@ -24,12 +24,12 @@ export default class Carrousel extends Component {
 
     return (
       <div className="section-main">
-        {/* <Link to={`/All/pages/main`}> */}
         <div className="header-section">
+        <Link to={`/All/pages/main`}>
           <h1> THIS IS THE CARROUSEL TEST SECTION </h1>
+        </Link>
           <Postdrop />
         </div>
-        {/* </Link> */}
         <hr id="line"></hr>
 
         <div className="section-carrousel-content">

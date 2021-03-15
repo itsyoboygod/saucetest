@@ -29,7 +29,7 @@ export default class Loadbox extends Component {
               </div>
             </a>
             <div className="loadbox-bottom">
-              <Link to={`/All/pages/main`}>
+              <Link to={`/Profile`}>
                 <div className="loadbox-bottom-circle"></div>
               </Link>
               <a href={filme.show.url}>

@@ -5,6 +5,8 @@ import Home from "./Home";
 import All from "./components/All";
 import Login from "./Login";
 import Registerpanel from "./Register";
+import Profile from "./Profile";
+
 import {isAuthenticated} from "./auth"  
 
 const PrivateRoute = ({component: Component, ...rest}) =>(
@@ -23,10 +25,10 @@ const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />{" "}
-      {/* <Route path="/All" component={All} />{" "} */}
       <PrivateRoute path="/All" component={All}/>
-      {/* <Route exact path="/" component={() => <h1>Login</h1>} /> */}
+      <PrivateRoute path="/Profile" component={Profile}/>
       <Route path="/Register" component={Registerpanel} />
+      {/* <Route exact path="/" component={() => <h1>Login</h1>} /> */}
       <Route
         path="*"
         component={() => (
