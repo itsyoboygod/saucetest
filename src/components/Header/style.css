@@ -70,7 +70,7 @@ body {
     margin: auto;
     flex-direction: row;
     justify-content: space-evenly;
-    border-bottom: solid 1px #888;
+    border-bottom: solid 1px #8888;
     align-items: center;
     /* border-radius: 5px; */
 }
@@ -91,7 +91,7 @@ body {
     justify-content: center;
     width: 63px;
     left: 0px;
-    border-right: 1px solid #a5a5a5;
+    border-right: 1px solid #8888;
 }
 
 .btn-sidebar span {
@@ -152,9 +152,8 @@ body {
 
 .input-div button:hover {
     cursor: pointer;
-    background-color:#272727;
+    background-color: #272727;
     transition: 0.5s;
-    
 }
 
 .navtop-input {
@@ -184,10 +183,9 @@ body {
 
 .notifi-div .fa:hover {
     cursor: pointer;
-    opacity:0.5;
+    opacity: 0.5;
     transition: 0.5s;
 }
-
 
 .notifi-div a {
     color: black;
@@ -199,11 +197,11 @@ body {
     font-style: initial !important;
 }
 
-.fa.fa-user{
+.fa.fa-user {
     text-underline-position: from-font;
 }
 
-#user-log-status{
+#user-log-status {
     margin: 0px;
     padding: 0px;
     display: flex;

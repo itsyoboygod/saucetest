@@ -50,6 +50,7 @@
     flex-direction: row;
     align-items: baseline;
     font-size: 1rem;
+    border-bottom: solid 1px #8888;
 }
 
 .header-section h1 {

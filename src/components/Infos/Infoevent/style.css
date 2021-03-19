@@ -4,11 +4,11 @@
     }
 }
 
-.info-class button {
+.info-class .button {
     display: flex;
     margin: none !important;
+    padding: 2px 5px !important;
     z-index: 99999999;
-    padding: 1px 5px !important;
     border-radius: 50% !important;
 }
 
