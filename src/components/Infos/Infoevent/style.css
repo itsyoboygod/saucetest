@@ -4,12 +4,25 @@
     }
 }
 
-.info-class .button {
+#id-btn-info-event {
     display: flex;
     margin: none !important;
-    padding: 2px 5px !important;
-    z-index: 99999999;
+    padding: 1px 5px !important;
+    background-color: #131313;
     border-radius: 50% !important;
+    border: solid 1px #8888;
+    color: #8888;
+    outline: none;
+    transition: 0.3s;
+
+}
+
+#id-btn-info-event:hover {
+    color: #888;
+    transition: 0.5s;
+    cursor: pointer;
+    border: solid 1px #888;
+    
 }
 
 .info-content {

@@ -10,7 +10,7 @@ function Infoevent() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
   return (
     <div className="info-class">
-      <button onClick={() => setmodalIsOpen(true)}>
+      <button id="id-btn-info-event" onClick={() => setmodalIsOpen(true)}>
         <Infobtn />
       </button>
       <Modal
