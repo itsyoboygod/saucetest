@@ -156,6 +156,11 @@
     margin-top: 10px;
 }
 
+#modal-clock input:hover {
+    font-size: 0.7rem;
+    transition: 0.5s;
+}
+
 #modal-clock form {
     display: flex;
     justify-content: center;
