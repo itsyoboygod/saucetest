@@ -100,7 +100,9 @@
     outline: none;
     margin: 3px;
     background-color: whitesmoke;
-    border: none;
+    border-style: none;
+    background: none;
+    border-bottom: solid 1px #888;
 }
 
 #id-radio-input-male #text {
@@ -133,9 +135,19 @@
     cursor: pointer;
     color: white;
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     font-family: monospace;
     justify-content: center;
+}
+
+.loginpanel-right input:focus {
+    outline: solid 1px white;
+    outline-offset: 1px;
+}
+
+.loginpanel-right input:hover {
+    font-size: 0.6rem;
+    transition: 0.5s;
 }
 
 .loginpanel-right button:hover {

@@ -15,7 +15,7 @@ export default class Home extends Component {
         <Sidebar />
         <CountdownClock />
         <Carrousel />
-        <Carrousel />
+        {/* <Carrousel /> */}
         {/* <Filter /> */}
 
         {/* <Mainsection /> */}
