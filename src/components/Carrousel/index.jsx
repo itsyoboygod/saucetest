@@ -6,6 +6,32 @@ import "./style.css";
 
 export default class Carrousel extends Component {
   render() {
+    // const ul = document.querySelector("#carrousel-static");
+    // const li = document.querySelectorAll("#id-li-wrap");
+    // const carouselButtons = document.querySelectorAll(".carousel__button");
+    // const numberOfImages = document.querySelectorAll("#carrousel-static img")
+    //   .length;
+    // let imageIndex = 1;
+    // let translateX = 0;
+
+    // carouselButtons.forEach((button) => {
+    //   button.addEventListener("click", (event) => {
+    //     if (event.target.id === "previous") {
+    //       if (imageIndex !== 1) {
+    //         imageIndex--;
+    //         translateX += 250;
+    //       }
+    //     } else {
+    //       if (imageIndex !== numberOfImages) {
+    //         imageIndex++;
+    //         translateX -= 250;
+    //       }
+    //     }
+
+    //     ul.style.transform = `translateX(${translateX}px)`;
+    //   });
+    // });
+
     const moveLeft = () => {
       const moveLeft = document.getElementById("carrousel-static");
       const box = document.getElementById("id-loadbox");
