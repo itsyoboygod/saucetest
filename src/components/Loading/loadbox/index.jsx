@@ -18,11 +18,10 @@ export default class Loadbox extends Component {
 
   render() {
     const { filmes } = this.state;
-
     return (
       <>
         {filmes.map((filme) => (
-          <div className="loadbox-div" key={filme.show.id} id="id-loadbox-div">
+          <li className="loadbox-div" key={filme.show.id} id="id-loadbox-div">
             <a href={filme.show.url}>
               <div className="loadbox" id="id-loadbox">
                 <Maindrop />
@@ -40,7 +39,7 @@ export default class Loadbox extends Component {
                 </div>
               </a>
             </div>
-          </div>
+          </li>
         ))}
       </>
     );

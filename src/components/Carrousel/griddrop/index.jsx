@@ -64,7 +64,7 @@ export default function Carrouseldrop() {
   }
 
   function wrapStyle() {
-    const wrapLi = document.getElementById("id-li-wrap");
+    const wrapLi = document.getElementById("carrousel-static");
     wrapLi.style.display = "flex";
     wrapLi.style.width = "1000px";
     wrapLi.style.flexWrap = "wrap";
@@ -97,7 +97,7 @@ export default function Carrouseldrop() {
     // loadboxDiv.style.margin = "25px";
   }
   // function unwrapStyle() {
-  //   const wrapLi = document.getElementById("id-li-wrap");
+  //   const wrapLi = document.getElementById("id-loadbox-div");
   //   wrapLi.style.flexWrap = "nowrap";
   // }
 
