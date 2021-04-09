@@ -6,33 +6,33 @@ import "./style.css";
 
 export default class Carrousel extends Component {
   render() {
-    const ul = document.querySelector(".carousel__ul");
-    const li = document.querySelectorAll(".carousel__ul li");
+    const li = document.getElementsByTagName("li");
+    const box = document.querySelectorAll(".class_li loadbox_div");
     const carouselButtons = document.querySelectorAll(".carousel__button");
-    const numberOflis = li.length;
-    let liIndex = 1;
+    const numberOfboxes = box.length;
+    let boxIndex = 1;
     let translateX = 0;
 
     carouselButtons.forEach((button) => {
       button.addEventListener("click", (event) => {
         if (event.target.id === "btn-span-arrow-left") {
-          if (liIndex !== 1) {
-            liIndex--;
+          if (boxIndex !== 1) {
+            boxIndex--;
             translateX += 250;
           }
         } else {
-          if (liIndex !== numberOflis) {
-            liIndex++;
+          if (boxIndex !== numberOfboxes) {
+            boxIndex++;
             translateX -= 250;
           }
         }
 
-        ul.style.transform = `translateX(${translateX}px)`;
-        li.forEach((li, index) => {
-          if (index === liIndex - 1) {
-            li.classList.add("active");
+        li.style.transform = `translateX(${translateX}px)`;
+        box.forEach((box, index) => {
+          if (index === boxIndex - 1) {
+            box.classList.add("active");
           } else {
-            li.classList.remove("active");
+            box.classList.remove("active");
           }
         });
       });
@@ -108,7 +108,7 @@ export default class Carrousel extends Component {
             <span className="arrow-span-carrousel-left">&#10092;</span>
           </button>
           <ul className="carousel__ul" id="carrousel-static">
-            <li className="active" id="id-li-wrap">
+            <li className="class_li" id="id-li-wrap">
               <Loadbox />
             </li>
           </ul>
