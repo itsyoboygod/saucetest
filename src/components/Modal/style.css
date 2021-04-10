@@ -74,11 +74,6 @@
     width: 100%;
 }
 
-.newmodal button {
-    color: white;
-    font-family: monospace;
-}
-
 #myBtn {
     display: flex;
     justify-content: center;
@@ -91,12 +86,19 @@
     padding: 7px;
     background-color: #303030;
     border-radius: 0px;
+    color: #888;
+    transition: 0.5s;
+    font-family: monospace;
+    transition: 0.2s;
+
 }
 
 #myBtn:hover {
-    color: white;
-    transition: 0.3s;
-    border: 1px solid lightgray;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    transition: 0.2s;
+
 }
 
 
