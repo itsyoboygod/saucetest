@@ -1,7 +1,7 @@
 .search-div {
     display: flex;
     width: 100%;
-    background-color: white;
+    background-color: #303030;
     height: auto;
     align-items: center;
     flex-direction: column;

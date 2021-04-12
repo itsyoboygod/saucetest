@@ -148,21 +148,25 @@ body {
     outline: none;
     margin-right: 2px;
     color: #8b8b8b;
+    box-shadow: -4px 0px 20px -4px hsl(0deg 0% 51% / 22%);
+
 }
 
 .input-div button:hover {
     cursor: pointer;
     background-color: #272727;
+    box-shadow: none !important;
     transition: 0.5s;
 }
 
 .navtop-input {
     width: 75%;
     height: 30px;
-    margin-left: 3px;
+    margin-left: 2px;
     outline: none;
     font-family: monospace;
     border: none;
+    background-color: #303030;
 }
 
 .notifi-div {

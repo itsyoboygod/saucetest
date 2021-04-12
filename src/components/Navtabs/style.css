@@ -1,0 +1,89 @@
+@media(max-width: 800px){
+    .info-content{
+        width: 100% !important;
+    }
+}
+
+.info-class button{
+    display: flex;
+    margin: none !important;
+    padding: 0 !important;
+    z-index: 99999999;
+}
+
+.info-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #303030;
+    font-family: monospace;
+    border: solid 1px grey;
+    margin-top: 15px;
+    color: white;
+
+}
+
+#info h1{
+   margin: 0;
+   padding: 10px;
+   width: fit-content;
+}
+
+#info h4{
+    margin: 0;
+    padding: 10px;
+    width: fit-content;
+ }
+
+
+
+ /* =================================================================== */
+
+
+ body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

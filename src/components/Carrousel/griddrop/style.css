@@ -2,6 +2,15 @@
     #id-li-wrap {
         justify-content: center;
     }
+    
+}
+
+@media (max-width: 500px) {
+    #carrousel-static{
+        margin-left: 50% !important;
+        margin-right: 50% !important;
+
+    }
 }
 
 .dropdown {
