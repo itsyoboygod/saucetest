@@ -113,11 +113,6 @@
     outline: none;
 }
 
-.section-carrousel-content ul li {
-    display: flex;
-    margin: 0px;
-}
-
 .arrow-span-carrousel-left {
     font-size: 3rem;
     cursor: pointer;

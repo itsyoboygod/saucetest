@@ -6,46 +6,12 @@ import "./style.css";
 
 export default class Carrousel extends Component {
   render() {
-    const li = document.getElementsByTagName("li");
-    const box = document.querySelectorAll(".class_li loadbox_div");
-    const carouselButtons = document.querySelectorAll(".carousel__button");
-    const numberOfboxes = box.length;
-    let boxIndex = 1;
-    let translateX = 0;
-
-    carouselButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
-        if (event.target.id === "btn-span-arrow-left") {
-          if (boxIndex !== 1) {
-            boxIndex--;
-            translateX += 250;
-          }
-        } else {
-          if (boxIndex !== numberOfboxes) {
-            boxIndex++;
-            translateX -= 250;
-          }
-        }
-
-        li.style.transform = `translateX(${translateX}px)`;
-        box.forEach((box, index) => {
-          if (index === boxIndex - 1) {
-            box.classList.add("active");
-          } else {
-            box.classList.remove("active");
-          }
-        });
-      });
-    });
-
-    console.log(li.length);
-
     //<>
     //===================================================================
     // const carouselImages = document.querySelector('.carousel__images');
     // const images = document.querySelectorAll('.carousel__images img');
     // const carouselButtons = document.querySelectorAll('.carousel__button');
-    // const numberOfImages = document.querySelectorAll('.carousel__images img').length;
+    // const numberOfImages = images.length;
     // let imageIndex = 1;
     // let translateX = 0;
 
@@ -91,6 +57,39 @@ export default class Carrousel extends Component {
     //   moveRight.style.transition = "1s";
     // };
     //</>
+    const ul = document.querySelector(".ul-carrousel");
+    const li = ul;
+    const carouselButtons = document.querySelectorAll(".carousel__button");
+    const numberOflis = li;
+    let liIndex = 1;
+    let translateX = 0;
+
+    carouselButtons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        if (event.target.id === "btn-span-arrow-left") {
+          if (liIndex !== 1) {
+            liIndex--;
+            translateX += 250;
+          }
+        } else {
+          if (liIndex !== numberOflis) {
+            liIndex++;
+            translateX -= 250;
+          }
+        }
+
+        li.style.transform = `translateX(${translateX}px)`;
+        li.forEach((li, index) => {
+          if (index === liIndex - 1) {
+            li.classList.add("active");
+          } else {
+            li.classList.remove("active");
+          }
+        });
+      });
+    });
+
+    console.log(ul);
 
     return (
       <div className="section-main">
@@ -101,16 +100,14 @@ export default class Carrousel extends Component {
           <Postdrop />
         </div>
 
-        <div className="section-carrousel-content">
+        <div className="section-carrousel-content" id="id-div-carrousel">
           {/* <h1>NO CONTENT YET :(</h1> */}
           {/* onClick={moveLeft} */}
           <button className="carousel__button" id="btn-span-arrow-left">
             <span className="arrow-span-carrousel-left">&#10092;</span>
           </button>
-          <ul className="carousel__ul" id="carrousel-static">
-            <li className="class_li" id="id-li-wrap">
-              <Loadbox />
-            </li>
+          <ul className="ul-carrousel" id="carrousel-static">
+            <Loadbox />
           </ul>
           <button className="carousel__button" id="btn-span-arrow-right">
             {/* onClick={moveRight} */}

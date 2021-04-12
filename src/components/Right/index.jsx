@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Newmodal from "../Modal";
+import Infoprofile from "../Infos/Infoprofile/index.";
 
 <link
   rel="stylesheet"
@@ -33,16 +33,14 @@ const Right = () => (
         </div>
         <div className="tooltip">
           <i className="fas fa-coins">
-            <span> 1.9M</span>
+            <span id="id-span-followers"> 1.9M</span>
           </i>
           <span className="tooltiptext">1.938.234 M</span>
         </div>
-        <i className="fas fa-gear"></i>
+        <Infoprofile />
+
         <i className="fa fa-sign-out"></i>
       </div>
-      
-          <Newmodal />
-       
     </div>
 
     <div className="ad-box-right">
