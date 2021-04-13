@@ -88,8 +88,18 @@
 
 #follower-num-id {
     font-family: monospace;
-    font-weight: 800;
-    font-size: 1.4rem;
+    -webkit-text-stroke-width: medium;
+    font-size: 1.2rem;
+}
+
+#id-span-followers{
+    font-weight: bolder !important;
+    font-family: monospace !important;
+    -webkit-text-stroke-width: medium !important;
+}
+
+#id-i-logout{
+    -webkit-text-stroke-width: medium;
 }
 
 .dropdown-content-user-follow {

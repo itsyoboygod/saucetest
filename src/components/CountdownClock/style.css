@@ -37,6 +37,7 @@
 
 #neweventtitle {
     line-break: auto;
+    word-break: break-word;
 }
 
 .info-time {

@@ -15,7 +15,7 @@ const Registerpanel = () => {
   };
 
   const registerUser = (e) => {
-    alert("User registred " + setEmail + setUsername + setGender);
+    alert("User registred " + setUsername + { email } + gender);
     registerForm.e.target = "";
   };
 

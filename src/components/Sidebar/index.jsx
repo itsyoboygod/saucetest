@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Config from "../Config/index.";
+import Navtab from "../Navtabs/index.";
 import Pencilicon from "../Pencilicon";
 import "./style.css";
 <link
@@ -28,6 +29,9 @@ export default class Sidebar extends Component {
           </li>
           <li style={{ padding: "0" }}>
             <Pencilicon />
+          </li>
+          <li style={{ padding: "0" }}>
+            <Navtab />
           </li>
         </ul>
       </div>

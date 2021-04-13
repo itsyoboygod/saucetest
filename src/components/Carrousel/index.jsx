@@ -100,9 +100,9 @@ export default class Carrousel extends Component {
           <Postdrop />
         </div>
 
+        {/* <h1>NO CONTENT YET :(</h1> */}
+        {/* onClick={moveLeft} */}
         <div className="section-carrousel-content" id="id-div-carrousel">
-          {/* <h1>NO CONTENT YET :(</h1> */}
-          {/* onClick={moveLeft} */}
           <button className="carousel__button" id="btn-span-arrow-left">
             <span className="arrow-span-carrousel-left">&#10092;</span>
           </button>
