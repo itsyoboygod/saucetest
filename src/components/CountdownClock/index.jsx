@@ -27,6 +27,7 @@ const CountdownClock = () => {
 
   const [remTime, setremTime] = useState(eventTime - currentTime);
 
+
   var [s, setS] = useState(Math.floor(remTime / 1000));
   var [m, setM] = useState(Math.floor(s / 60));
   var [h, setH] = useState(Math.floor(m / 60));
