@@ -17,6 +17,9 @@ export default class HeaderLeft extends Component {
         <h3>
           <a href="../pages/random">Random</a>
         </h3>
+        <h3>
+          <a href="../pages/events">Events</a>
+        </h3>
       </div>
     );
   }

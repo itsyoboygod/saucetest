@@ -129,12 +129,11 @@ function Editclock({
                   </li>
                 </ul>
               </div>
-        <div className="btn-cancel-save-clock">
-
-              <button
+              <div className="btn-cancel-save-clock">
+                <button
                   type="submit"
                   id="btn-cancel-clock-modal"
-                  // onClick={() => setmodalIsOpen(false)}
+                  onClick={() => setmodalIsOpen(false)}
                 >
                   <h3>Cancel</h3>
                 </button>
@@ -146,9 +145,7 @@ function Editclock({
                 >
                   <h3>Save</h3>
                 </button>
-
-        </div>
-
+              </div>
             </form>
           </div>
         </div>

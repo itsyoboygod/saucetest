@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Infoprofileconfig from "../Infos/infoproflieconfig/index.";
+import Infoprofilelogout from "../Infos/infoprofilelogout/index.";
 
 <link
   rel="stylesheet"
@@ -38,7 +39,7 @@ const Right = () => (
           <span className="tooltiptext">1.938.234 M</span>
         </div>
         <Infoprofileconfig />
-        <i id="id-i-logout" className="fa fa-sign-out"></i>
+        <Infoprofilelogout />
       </div>
     </div>
 

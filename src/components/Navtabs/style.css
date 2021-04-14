@@ -26,9 +26,10 @@
     height: auto;
     background-color: #303030;
     font-family: monospace;
-    border: solid 1px grey;
+    border: solid 1px #8888;
     margin-top: 15px;
     color: white;
+    border-radius: 3px;
 }
 
 #info h1 {
@@ -55,7 +56,6 @@ body {
 
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
     background-color: #303030;
 }
 

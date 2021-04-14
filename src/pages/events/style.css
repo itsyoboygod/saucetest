@@ -1,0 +1,14 @@
+.events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    border: solid 1px #888;
+    flex-direction: column;
+}
+
+.events h1 {
+    text-align: center;
+    font-family: monospace;
+    color: white;
+}

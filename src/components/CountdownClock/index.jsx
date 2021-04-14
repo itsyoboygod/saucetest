@@ -3,6 +3,7 @@ import React, { Components, useState, useEffect } from "react";
 import { Component } from "react";
 import Infoevent from "../Infos/Infoevent/index.jsx";
 import Editclock from "./Editclock";
+
 import "./style.css";
 
 const CountdownClock = () => {
@@ -26,7 +27,6 @@ const CountdownClock = () => {
   const [eventTime, seteventTime] = useState(eventDate.getTime());
 
   const [remTime, setremTime] = useState(eventTime - currentTime);
-
 
   var [s, setS] = useState(Math.floor(remTime / 1000));
   var [m, setM] = useState(Math.floor(s / 60));
@@ -86,7 +86,7 @@ const CountdownClock = () => {
               <Infoevent />
             </td>
             <td colspan="4" id="neweventtitle">
-              {title}
+              <a href="All/pages/events">{title}</a>
             </td>
             <td>
               <button id="myBtn-pencil-clock">

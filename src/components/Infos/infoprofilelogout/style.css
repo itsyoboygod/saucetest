@@ -1,0 +1,61 @@
+@media (max-width: 800px) {
+    .info-content {
+        width: 100% !important;
+    }
+}
+
+.info-class button {
+    display: flex;
+    margin: none !important;
+    padding: 0 !important;
+    z-index: 99999999;
+}
+
+#id-btn-profile-logout {
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+#id-btn-profile-logout:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.info-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #303030;
+    font-family: monospace;
+    border: solid 1px grey;
+    margin-top: 15px;
+    color: white;
+}
+
+#info h1 {
+    margin: 0;
+    padding: 10px;
+    width: fit-content;
+}
+
+#info h4 {
+    margin: 0;
+    padding: 10px;
+    width: fit-content;
+}

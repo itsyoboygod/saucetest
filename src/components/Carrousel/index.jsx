@@ -102,14 +102,14 @@ export default class Carrousel extends Component {
 
         {/* <h1>NO CONTENT YET :(</h1> */}
         <div className="section-carrousel-content" id="id-div-carrousel">
-        {/* onClick={moveLeft} */}
+          {/* onClick={moveLeft} */}
           <button className="carousel__button" id="btn-span-arrow-left">
             <span className="arrow-span-carrousel-left">&#10092;</span>
           </button>
           <ul className="ul-carrousel" id="carrousel-static">
             <Loadbox />
           </ul>
-            {/* onClick={moveRight} */}
+          {/* onClick={moveRight} */}
           <button className="carousel__button" id="btn-span-arrow-right">
             <span className="arrow-span-carrousel-right">&#10093;</span>
           </button>

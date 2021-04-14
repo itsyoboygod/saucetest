@@ -64,7 +64,8 @@
 
 .header-section h1:hover {
     filter: drop-shadow(5px 2px 5px black);
-    transition: 0.2s;
+    opacity: 0.5;
+    transition: 0.5s;
 }
 
 .section-carrousel-content {
@@ -86,7 +87,6 @@
     top: 0;
     cursor: pointer !important;
     height: 7px;
-    
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
@@ -107,7 +107,6 @@
 
 ::-webkit-scrollbar:hover {
     cursor: pointer;
-    
 }
 
 #carrousel-static {

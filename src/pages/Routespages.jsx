@@ -6,6 +6,7 @@ import Mainpage from "./main";
 import Newpage from "./new";
 import Toppage from "./top";
 import Randompage from "./random";
+import Eventspage from "./events";
 
 const Routespages = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const Routespages = () => (
       <Route path="/All/pages/top" component={Toppage} />
       <Route path="/All/pages/random" component={Randompage} />
       <Route path="/All/pages/new" component={Newpage} />
+      <Route path="/All/pages/events" component={Eventspage} />
     </Switch>
   </BrowserRouter>
 );

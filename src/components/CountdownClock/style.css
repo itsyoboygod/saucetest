@@ -40,6 +40,18 @@
     word-break: break-word;
 }
 
+#neweventtitle a {
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    transition: 0.2s;
+}
+
+#neweventtitle a:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
 .info-time {
     display: flex;
     width: 100%;
