@@ -65,19 +65,25 @@ export default function Carrouseldrop() {
 
   function wrapStyle() {
     const wrapLi = document.getElementById("carrousel-static");
+    const scrollbar = document.getElementById("id-div-carrousel");
     wrapLi.style.display = "flex";
     wrapLi.style.width = "1000px";
-    wrapLi.style.flexWrap = "wrap";
+    wrapLi.style.transition = " wrap 9s";
+    scrollbar.style.overflowX = "hidden";
 
-    var arrowLeft = document.getElementById("btn-span-arrow-left");
+
+
+    const arrowLeft = document.getElementById("btn-span-arrow-left");
     arrowLeft.remove();
 
-    var arrowRight = document.getElementById("btn-span-arrow-right");
+    const arrowRight = document.getElementById("btn-span-arrow-right");
     arrowRight.remove();
 
     const moveCarrousel = document.getElementById("carrousel-static");
     moveCarrousel.style.marginLeft = "0px";
     moveCarrousel.style.marginRight = "0px";
+    moveCarrousel.style.marginRight = "0px";
+
 
     const wrap_size = document.getElementById("id-loadbox-div");
 
@@ -112,7 +118,7 @@ export default function Carrouseldrop() {
             {/* {1 + 1 == 1 ? "😁" : "☹️"} */}
             Option 1
             <a href="#">
-              <Infocarrousel/>
+              <Infocarrousel />
             </a>
           </button>
         </a>
@@ -120,7 +126,7 @@ export default function Carrouseldrop() {
           <button>
             Option 2{" "}
             <a href="#">
-              <Infocarrousel/>
+              <Infocarrousel />
             </a>
           </button>
         </a>
@@ -130,7 +136,7 @@ export default function Carrouseldrop() {
           onClick={wrapStyle}
           id="open-close-grid-btn"
         >
-          {wrapStyle ? wrapStyle : !wrapStyle}
+          {/* {wrapStyle ? wrapStyle : !wrapStyle} */}
           <p id="id-p-open-grid">Open grid</p>
           <div className="btn-span-grid" id="id-btn-span-grid">
             <div className="row-blocks-top">

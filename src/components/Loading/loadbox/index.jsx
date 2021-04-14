@@ -21,7 +21,11 @@ export default class Loadbox extends Component {
     return (
       <>
         {filmes.map((filme) => (
-          <li className="loadbox-div" key={filme.show.id} id="id-loadbox-div">
+          <li
+            className="active loadbox-div"
+            id="id-loadbox-div"
+            key={filme.show.id}
+          >
             <a href={filme.show.url}>
               <div className="loadbox" id="id-loadbox">
                 <Maindrop />

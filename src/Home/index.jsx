@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Sidebar from "../components/Sidebar";
 import CountdownClock from "../components/CountdownClock";
 import Hook from "../components/Hook";
-import Newmodal from "../components/Modal";
+// import Newmodal from "../components/Modal";
 import Filter from "../components/Filter";
 import Carrousel from "../components/Carrousel";
 import Header from "../components/Header";

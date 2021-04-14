@@ -77,6 +77,10 @@
     font-family: monospace;
 }
 
+#id-span-followers {
+    -webkit-text-stroke: medium;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;

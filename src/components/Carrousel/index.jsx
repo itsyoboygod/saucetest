@@ -6,40 +6,6 @@ import "./style.css";
 
 export default class Carrousel extends Component {
   render() {
-    const ul = document.getElementById("carrousel-static");
-    const li = document.getElementById("id-loadbox-div");
-    const carouselButtons = document.querySelectorAll(".carousel__button");
-    const numberOflis = li;
-    let liIndex = 1;
-    let translateX = 0;
-
-    carouselButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
-        if (event.target.id === "btn-span-arrow-left") {
-          if (liIndex !== 1) {
-            liIndex--;
-            translateX += 250;
-          }
-        } else {
-          if (liIndex !== numberOflis) {
-            liIndex++;
-            translateX -= 250;
-          }
-        }
-
-        li.style.transform = `translateX(${translateX}px)`;
-        li.forEach((li, index) => {
-          if (index === liIndex - 1) {
-            li.classList.add("active");
-          } else {
-            li.classList.remove("active");
-          }
-        });
-      });
-    });
-
-    console.log(ul);
-
     //<>
     //===================================================================
     // const carouselImages = document.querySelector('.carousel__images');
@@ -91,6 +57,39 @@ export default class Carrousel extends Component {
     //   moveRight.style.transition = "1s";
     // };
     //</>
+    const ul = document.querySelector(".ul-carrousel");
+    const li = ul;
+    const carouselButtons = document.querySelectorAll(".carousel__button");
+    const numberOflis = li;
+    let liIndex = 1;
+    let translateX = 0;
+
+    carouselButtons.forEach((button) => {
+      button.addEventListener("click", (event) => {
+        if (event.target.id === "btn-span-arrow-left") {
+          if (liIndex !== 1) {
+            liIndex--;
+            translateX += 250;
+          }
+        } else {
+          if (liIndex !== numberOflis) {
+            liIndex++;
+            translateX -= 250;
+          }
+        }
+
+        li.style.transform = `translateX(${translateX}px)`;
+        li.forEach((li, index) => {
+          if (index === liIndex - 1) {
+            li.classList.add("active");
+          } else {
+            li.classList.remove("active");
+          }
+        });
+      });
+    });
+
+    console.log(ul);
 
     return (
       <div className="section-main">
@@ -101,17 +100,17 @@ export default class Carrousel extends Component {
           <Postdrop />
         </div>
 
-        <div className="section-carrousel-content">
-          {/* <h1>NO CONTENT YET :(</h1> */}
-          {/* onClick={moveLeft} */}
+        {/* <h1>NO CONTENT YET :(</h1> */}
+        <div className="section-carrousel-content" id="id-div-carrousel">
+        {/* onClick={moveLeft} */}
           <button className="carousel__button" id="btn-span-arrow-left">
             <span className="arrow-span-carrousel-left">&#10092;</span>
           </button>
           <ul className="ul-carrousel" id="carrousel-static">
-              <Loadbox />
+            <Loadbox />
           </ul>
-          <button className="carousel__button" id="btn-span-arrow-right">
             {/* onClick={moveRight} */}
+          <button className="carousel__button" id="btn-span-arrow-right">
             <span className="arrow-span-carrousel-right">&#10093;</span>
           </button>
         </div>

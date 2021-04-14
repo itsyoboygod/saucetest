@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import Newmodal from "../Modal";
 import Infoprofileconfig from "../Infos/infoproflieconfig/index.";
 
 <link
@@ -38,12 +37,9 @@ const Right = () => (
           </i>
           <span className="tooltiptext">1.938.234 M</span>
         </div>
-       <Infoprofileconfig/>
-        <i  id="id-i-logout" className="fa fa-sign-out"></i>
+        <Infoprofileconfig />
+        <i id="id-i-logout" className="fa fa-sign-out"></i>
       </div>
-      
-          <Newmodal />
-       
     </div>
 
     <div className="ad-box-right">

@@ -1,23 +1,20 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import "./style.css";
+import "../Navtabs/navtab.js";
 
-import Tabs from 'react-bootstrap/Tabs'
-import Tab from 'react-bootstrap/Tab'
-import TabContainer from 'react-bootstrap/TabContainer'
-import TabContent from 'react-bootstrap/TabContent'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
+import TabContainer from "react-bootstrap/TabContainer";
+import TabContent from "react-bootstrap/TabContent";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
-import Infobtn from "../Infos/Infobtn"
-
+import Infobtn from "../Infos/Infobtn";
 
 Modal.setAppElement("#root");
 
 function Navtab() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
-
-
-
 
   return (
     <div className="info-class">
@@ -38,22 +35,34 @@ function Navtab() {
         <div className="info-content">
           <button id="btn-close-modal" onClick={() => setmodalIsOpen(false)}>
             &times;
-            </button>
+          </button>
           <div id="info">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'London')">
+                London
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Paris')">
+                Paris
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                Tokyo
+              </button>
+            </div>
 
+            <div id="London" class="tabcontent">
+              <h3>London</h3>
+              <p>London is the capital city of England.</p>
+            </div>
 
-            <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
-              <Tab eventKey="home" title="Home">
-                <h1>bruh1</h1>
-              </Tab>
-              <Tab eventKey="profile" title="Profile">
-                <h1>bruh2</h1>
-              </Tab>
-              <Tab eventKey="contact" title="Contact" disabled>
-                <h1>bruh3</h1>
-              </Tab>
-            </Tabs>
+            <div id="Paris" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p>
+            </div>
 
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
           </div>
         </div>
       </Modal>
