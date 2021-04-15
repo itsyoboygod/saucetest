@@ -3,6 +3,7 @@ import React, { Components, useState, useEffect } from "react";
 import { Component } from "react";
 import Infoevent from "../Infos/Infoevent/index.jsx";
 import Editclock from "./Editclock";
+import Tootlip from "../Tootlip";
 
 import "./style.css";
 
@@ -82,23 +83,34 @@ const CountdownClock = () => {
       <div className="content-clock">
         <table className="countdowncontainer">
           <tr class="info-title">
-            <td>
-              <Infoevent />
-            </td>
             <td colspan="4" id="neweventtitle">
-              <a href="All/pages/events">{title}</a>
-            </td>
-            <td>
-              <button id="myBtn-pencil-clock">
-                <Editclock
-                  eventTitle={eventTitle}
-                  eventMonth={eventMonth}
-                  eventDay={eventDay}
-                  eventHour={eventHour}
-                  eventMinute={eventMinute}
-                  eventSecond={eventSecond}
-                />
-              </button>
+              <div class="mytooltip">
+                <a href="All/pages/events">
+                  <p>{title}</p>
+                </a>
+                <span id="id-mytooltip">
+                  <tr>
+                    <td>
+                      <Infoevent />
+                    </td>
+                    <td>
+                      <button id="myBtn-pencil-clock">
+                        <Editclock
+                          eventTitle={eventTitle}
+                          eventMonth={eventMonth}
+                          eventDay={eventDay}
+                          eventHour={eventHour}
+                          eventMinute={eventMinute}
+                          eventSecond={eventSecond}
+                        />
+                      </button>
+                    </td>
+                    <td>
+                      <button id="id-plus-sign">+</button>
+                    </td>
+                  </tr>
+                </span>
+              </div>
             </td>
           </tr>
           <tr className="info-time">

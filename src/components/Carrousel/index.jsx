@@ -57,6 +57,8 @@ export default class Carrousel extends Component {
     //   moveRight.style.transition = "1s";
     // };
     //</>
+
+    // ==================================================
     const ul = document.querySelector(".ul-carrousel");
     const li = ul;
     const carouselButtons = document.querySelectorAll(".carousel__button");
@@ -92,7 +94,7 @@ export default class Carrousel extends Component {
     console.log(ul);
 
     return (
-      <div className="section-main">
+      <div className="section-main" id="id-section-main">
         <div className="header-section">
           <Link to={`/All/pages/main`}>
             <h1> THIS IS THE CARROUSEL TEST SECTION </h1>

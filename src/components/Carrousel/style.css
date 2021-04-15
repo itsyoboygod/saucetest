@@ -95,7 +95,6 @@
     padding: 0;
     margin: 0;
     top: 0;
-    border: dotted 1px #444;
     border-radius: 3px;
 }
 
@@ -106,7 +105,10 @@
 }
 
 ::-webkit-scrollbar:hover {
-    cursor: pointer;
+    cursor: pointer !important;
+    border: solid 1px #444;
+    border-radius: 3px;
+    transition: 0.5s !important;
 }
 
 #carrousel-static {
