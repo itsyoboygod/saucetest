@@ -71,8 +71,6 @@ export default function Carrouseldrop() {
     wrapLi.style.transition = " wrap 9s";
     scrollbar.style.overflowX = "hidden";
 
-
-
     const arrowLeft = document.getElementById("btn-span-arrow-left");
     arrowLeft.remove();
 
@@ -83,7 +81,6 @@ export default function Carrouseldrop() {
     moveCarrousel.style.marginLeft = "0px";
     moveCarrousel.style.marginRight = "0px";
     moveCarrousel.style.marginRight = "0px";
-
 
     const wrap_size = document.getElementById("id-loadbox-div");
 
@@ -108,7 +105,7 @@ export default function Carrouseldrop() {
   // }
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" id="id-dropdown-wrap">
       <span id="option-id" className="option">
         &#8942;
       </span>

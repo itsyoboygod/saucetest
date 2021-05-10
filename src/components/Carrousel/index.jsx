@@ -91,10 +91,12 @@ export default class Carrousel extends Component {
       });
     });
 
-    console.log(ul);
+    const styleSecMain = {
+      fontColor: "blue",
+    };
 
     return (
-      <div className="section-main" id="id-section-main">
+      <div style={styleSecMain} className="section-main" id="id-section-main">
         <div className="header-section">
           <Link to={`/All/pages/main`}>
             <h1> THIS IS THE CARROUSEL TEST SECTION </h1>
@@ -103,18 +105,26 @@ export default class Carrousel extends Component {
         </div>
 
         {/* <h1>NO CONTENT YET :(</h1> */}
-        <div className="section-carrousel-content" id="id-div-carrousel">
-          {/* onClick={moveLeft} */}
-          <button className="carousel__button" id="btn-span-arrow-left">
-            <span className="arrow-span-carrousel-left">&#10092;</span>
-          </button>
-          <ul className="ul-carrousel" id="carrousel-static">
-            <Loadbox />
-          </ul>
-          {/* onClick={moveRight} */}
-          <button className="carousel__button" id="btn-span-arrow-right">
-            <span className="arrow-span-carrousel-right">&#10093;</span>
-          </button>
+        <div className="all-carousell">
+          <div className="div-arrows" id="id-div-arrow-left">
+            <button className="carousel__button" id="btn-span-arrow-left">
+              <span className="arrow-span-carrousel-left">&#10092;</span>
+            </button>
+          </div>
+          <div className="section-carrousel-content" id="id-div-carrousel">
+            {/* onClick={moveLeft} */}
+            <ul className="ul-carrousel" id="carrousel-static">
+              <Loadbox />
+              {/* <Loadbox /> */}
+            </ul>
+
+            {/* onClick={moveRight} */}
+          </div>
+          <div className="div-arrows" id="id-div-arrow-right">
+            <button className="carousel__button" id="btn-span-arrow-right">
+              <span className="arrow-span-carrousel-right">&#10093;</span>
+            </button>
+          </div>
         </div>
       </div>
     );

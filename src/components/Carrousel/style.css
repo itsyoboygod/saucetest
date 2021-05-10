@@ -68,6 +68,17 @@
     transition: 0.5s;
 }
 
+.all-carousell {
+    display: flex;
+    align-items: center;
+}
+
+.div-arrows {}
+
+#id-div-arrow-left {}
+
+#id-div-arrow-right {}
+
 .section-carrousel-content {
     display: flex;
     justify-content: center;
@@ -154,20 +165,16 @@
     font-size: 3rem;
     cursor: pointer;
     transition: 0.2s;
-    left: 0px;
     color: #808080;
     z-index: 999;
-    position: absolute;
 }
 
 .arrow-span-carrousel-right {
     font-size: 3rem;
     cursor: pointer;
     transition: 0.2s;
-    right: 0px;
     color: #808080;
     z-index: 999;
-    position: absolute;
 }
 
 .arrow-span-carrousel-left:hover {

@@ -13,9 +13,8 @@ import Infobtn from "../Infos/Infobtn";
 
 Modal.setAppElement("#root");
 
-function Navtab() {
+const Navtab = () => {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
-
   return (
     <div className="info-class">
       <button onClick={() => setmodalIsOpen(true)}>
@@ -38,15 +37,9 @@ function Navtab() {
           </button>
           <div id="info">
             <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'London')">
-                London
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'Paris')">
-                Paris
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-                Tokyo
-              </button>
+              <button class="tablinks">London</button>
+              <button class="tablinks">Paris</button>
+              <button class="tablinks">Tokyo</button>
             </div>
 
             <div id="London" class="tabcontent">
@@ -65,9 +58,10 @@ function Navtab() {
             </div>
           </div>
         </div>
+        <script src="./navtab.js"></script>
       </Modal>
     </div>
   );
-}
+};
 
 export default Navtab;

@@ -7,26 +7,27 @@ import Login from "./Login";
 import Registerpanel from "./Register";
 import Profile from "./Profile";
 
-import {isAuthenticated} from "./auth"  
+import { isAuthenticated } from "./auth";
 
-const PrivateRoute = ({component: Component, ...rest}) =>(
-  <Route {...rest} render={props => isAuthenticated() ?(
-    <Component {...props}/>
-  ) : (
-    <Redirect to={{pathname: '/', state: {from: props.location}}}/>
-  )
-}
-/>
-
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuthenticated() ? (
+        <Component {...props} />
+      ) : (
+        <Redirect to={{ pathname: "/", state: { from: props.location } }} />
+      )
+    }
+  />
 );
-
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />{" "}
-      <PrivateRoute path="/All" component={All}/>
-      <PrivateRoute path="/Profile" component={Profile}/>
+      <PrivateRoute path="/All" component={All} />
+      <PrivateRoute path="/Profile" component={Profile} />
       <Route path="/Register" component={Registerpanel} />
       {/* <Route exact path="/" component={() => <h1>Login</h1>} /> */}
       <Route
@@ -35,7 +36,6 @@ const Routes = () => (
           <h1 style={{ margin: "15%", color: "white" }}>Page not found :(</h1>
         )}
       />
-
     </Switch>
   </BrowserRouter>
 );

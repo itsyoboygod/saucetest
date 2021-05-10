@@ -11,6 +11,7 @@ function Editclock({
   eventHour,
   eventMinute,
   eventSecond,
+  eventDescp,
 }) {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
 
@@ -22,6 +23,8 @@ function Editclock({
   const [m, setMinute] = useState("");
   const [s, setSecond] = useState("");
 
+  const [descp, setDescp] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     eventTitle(title);
@@ -30,6 +33,7 @@ function Editclock({
     eventHour(h);
     eventMinute(m);
     eventSecond(s);
+    eventDescp(descp);
   };
 
   return (
@@ -56,6 +60,7 @@ function Editclock({
           </button>
           <div id="modal-clock">
             <form onSubmit={handleSubmit}>
+              <h1>Set event time/date</h1>
               <div className="input-div-modal-clock">
                 <input
                   id="id-event-title"
@@ -125,6 +130,20 @@ function Editclock({
                       type="number"
                       value={s}
                       onChange={(e) => setSecond(e.target.value)}
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div className="set-info-event">
+                <h1>Set event info</h1>
+                <ul>
+                  <li>
+                    <input
+                      className="clock-input-modal"
+                      placeholder=" event description.."
+                      type="text"
+                      value={descp}
+                      onChange={(e) => setDescp(e.target.value)}
                     />
                   </li>
                 </ul>

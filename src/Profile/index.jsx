@@ -1,20 +1,12 @@
 import React from "react";
-
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-
-import Mainpage from "./main";
-import Newpage from "./new";
-import Toppage from "./top";
-import Randompage from "./random";
-import Eventpages from "./events";
-
+import LeftProfile from "../components/LeftProfile";
+import Right from "../components/Right";
 
 const Profile = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/All-profile/Profile/events" component={Eventpages} />
-    </Switch>
-  </BrowserRouter>
+  <div className="all">
+    <LeftProfile />
+    <Right />
+  </div>
 );
 
 export default Profile;

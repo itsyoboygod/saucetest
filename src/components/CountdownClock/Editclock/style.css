@@ -156,6 +156,12 @@
     margin-top: 10px;
 }
 
+#modal-clock h1 {
+    margin: 10px;
+    color: white;
+    font-family: monospace;
+}
+
 #modal-clock input:hover {
     font-size: 0.7rem;
     transition: 0.5s;
@@ -240,6 +246,28 @@
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+}
+
+.set-info-event {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.set-info-event h1 {
+    margin: 10px;
+    color: white;
+    font-family: monospace;
+}
+
+.set-info-event ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
 }
 
 .btn-cancel-save-clock {
