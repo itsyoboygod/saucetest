@@ -14,6 +14,8 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    flex-direction: column;
+
 }
 
 .users-list li {
