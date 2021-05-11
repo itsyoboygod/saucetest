@@ -3,6 +3,7 @@ import Modal from "react-modal";
 import "./style.css";
 
 import Infobtn from "../Infobtn";
+import Editclock from "../../CountdownClock/Editclock";
 
 Modal.setAppElement("#root");
 

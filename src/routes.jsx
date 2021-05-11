@@ -8,6 +8,7 @@ import Registerpanel from "./Register";
 import Profile from "./Profile";
 
 import { isAuthenticated } from "./auth";
+import Users from "./Users";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -29,6 +30,7 @@ const Routes = () => (
       <PrivateRoute path="/All" component={All} />
       <PrivateRoute path="/Profile" component={Profile} />
       <Route path="/Register" component={Registerpanel} />
+      <Route path="/Users" component={Users} />
       {/* <Route exact path="/" component={() => <h1>Login</h1>} /> */}
       <Route
         path="*"
