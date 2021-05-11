@@ -68,6 +68,7 @@
     transition: 0.5s;
 }
 
+<<<<<<< HEAD
 .all-carousell {
     display: flex;
     align-items: center;
@@ -79,6 +80,19 @@
 
 #id-div-arrow-right {}
 
+=======
+.arrows-div{
+    display: flex;
+    background-color: #444;
+    margin: 0;
+    width: 1025px;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 150px;
+    position: absolute;
+}
+
+>>>>>>> carrousel lasts updadtes
 .section-carrousel-content {
     display: flex;
     justify-content: center;
@@ -113,6 +127,11 @@
     background: #303030;
     border-radius: 5%;
     background: #444;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    outline: none !important;
+
 }
 
 ::-webkit-scrollbar:hover {
@@ -175,6 +194,10 @@
     transition: 0.2s;
     color: #808080;
     z-index: 999;
+<<<<<<< HEAD
+=======
+
+>>>>>>> carrousel lasts updadtes
 }
 
 .arrow-span-carrousel-left:hover {

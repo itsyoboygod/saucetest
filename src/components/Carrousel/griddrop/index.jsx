@@ -99,13 +99,18 @@ export default function Carrouseldrop() {
     // const loadboxDiv = document.getElementsByClassName("loadbox-div");
     // loadboxDiv.style.margin = "25px";
   }
+
   // function unwrapStyle() {
   //   const wrapLi = document.getElementById("id-loadbox-div");
   //   wrapLi.style.flexWrap = "nowrap";
   // }
 
   return (
+<<<<<<< HEAD
     <div className="dropdown" id="id-dropdown-wrap">
+=======
+    <div className="dropdown" id="id-wrap-dropdown">
+>>>>>>> carrousel lasts updadtes
       <span id="option-id" className="option">
         &#8942;
       </span>

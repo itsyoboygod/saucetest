@@ -37,6 +37,13 @@
     color: white;
 }
 
+
+
+.sticky {
+    position: fixed !important;
+    margin-top: 100px !important;
+  }
+
 .dropdown-content-option {
     display: none;
     left: -40px !important;
