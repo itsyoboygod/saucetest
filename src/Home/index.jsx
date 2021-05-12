@@ -21,7 +21,6 @@ export default class Home extends Component {
 
         {/* <FunctionTest /> */}
 
-        {/* <Carrousel /> */}
         {/* <Filter /> */}
 
         {/* <Mainsection /> */}
