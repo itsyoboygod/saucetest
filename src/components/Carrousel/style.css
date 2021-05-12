@@ -68,7 +68,7 @@
     transition: 0.5s;
 }
 
-.arrows-div{
+.arrows-div {
     display: flex;
     background-color: #444;
     margin: 0;
@@ -77,6 +77,12 @@
     justify-content: space-between;
     margin-top: 150px;
     position: absolute;
+}
+
+.all-carrousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .section-carrousel-content {
@@ -117,7 +123,6 @@
 
 ::-webkit-scrollbar-thumb:vertical:hover {
     outline: none !important;
-
 }
 
 ::-webkit-scrollbar:hover {

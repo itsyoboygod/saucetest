@@ -2,22 +2,16 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import "./style.css";
 
-import Inforeportbtn from "../Inforeportbtn";
+import Infodeletebtn from "../Infodeletebtn";
 
 Modal.setAppElement("#root");
 
-function Inforeport() {
+function Infodelete() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   eventTitle(title);
-  // };
-
   return (
     <div className="info-class">
       <button id="id-btn-report" onClick={() => setmodalIsOpen(true)}>
-        <Inforeportbtn />
+        <Infodeletebtn />
       </button>
       <Modal
         isOpen={modalIsOpen}
@@ -35,23 +29,8 @@ function Inforeport() {
             &times;
           </button>
           <div id="info">
-            <h1>INFO REPORT</h1>
-            <h4>This is the info report text</h4>
-
-            <form>
-              <h1>Set report subject</h1>
-              <div className="input-div-modal-clock">
-                <input
-                  id="id-event-title"
-                  className="clock-input-modal"
-                  placeholder=" report letter.."
-                  type="text"
-                  // value={title}
-                  // onChange={(e) => setTitle(e.target.value)}
-                />
-              </div>
-            </form>
-
+            <h1>INFO DELETE</h1>
+            <h4>This is the info delete text</h4>
             <div className="btn-cancel-save-clock">
               <button
                 type="submit"
@@ -66,7 +45,7 @@ function Inforeport() {
                 id="btn-save-clock-modal"
                 // onClick={() => setmodalIsOpen(false)}
               >
-                <h3>Report</h3>
+                <h3>Delete</h3>
               </button>
             </div>
           </div>
@@ -76,4 +55,4 @@ function Inforeport() {
   );
 }
 
-export default Inforeport;
+export default Infodelete;

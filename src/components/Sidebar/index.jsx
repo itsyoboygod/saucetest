@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Config from "../Config/index.";
+import Infobtn from "../Infos/Infobtn";
+import Inforeport from "../Infos/Inforeport/index.";
 import Navtab from "../Navtabs/index.";
 import Pencilicon from "../Pencilicon";
 import "./style.css";
@@ -19,7 +21,7 @@ export default class Sidebar extends Component {
             </div>
           </li>
           <li>
-           <Config/>
+            <Config />
           </li>
           <li>
             <div className="tooltip">
@@ -32,6 +34,9 @@ export default class Sidebar extends Component {
           </li>
           <li style={{ padding: "0" }}>
             <Navtab />
+          </li>
+          <li style={{ padding: "0" }}>
+            <Inforeport />
           </li>
         </ul>
       </div>

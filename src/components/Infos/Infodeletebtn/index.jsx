@@ -2,12 +2,12 @@ import { render } from "@testing-library/react";
 import React from "react";
 import "./style.css";
 
-const Inforeportbtn = () => {
+const Infodeletebtn = () => {
   return (
     <div>
-      <span id="info-span-report">!</span>
+      <span id="info-span-delete">🗑</span>
     </div>
   );
 };
 
-export default Inforeportbtn;
+export default Infodeletebtn;
