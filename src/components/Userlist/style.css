@@ -29,6 +29,12 @@
     font-family: monospace;
 }
 
+.users-list li h1:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
 .users-list li span {
     font-size: 2rem;
     padding: 0;
