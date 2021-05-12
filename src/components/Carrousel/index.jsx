@@ -105,28 +105,6 @@ export default class Carrousel extends Component {
         </div>
 
         {/* <h1>NO CONTENT YET :(</h1> */}
-<<<<<<< HEAD
-        <div className="all-carousell">
-          <div className="div-arrows" id="id-div-arrow-left">
-            <button className="carousel__button" id="btn-span-arrow-left">
-              <span className="arrow-span-carrousel-left">&#10092;</span>
-            </button>
-          </div>
-          <div className="section-carrousel-content" id="id-div-carrousel">
-            {/* onClick={moveLeft} */}
-            <ul className="ul-carrousel" id="carrousel-static">
-              <Loadbox />
-              {/* <Loadbox /> */}
-            </ul>
-
-            {/* onClick={moveRight} */}
-          </div>
-          <div className="div-arrows" id="id-div-arrow-right">
-            <button className="carousel__button" id="btn-span-arrow-right">
-              <span className="arrow-span-carrousel-right">&#10093;</span>
-            </button>
-          </div>
-=======
         <div className="arrows-div">
         <button className="carousel__button" id="btn-span-arrow-left">
           <span className="arrow-span-carrousel-left">&#10092;</span>
@@ -143,7 +121,6 @@ export default class Carrousel extends Component {
           </ul>
           {/* onClick={moveRight} */}
          
->>>>>>> carrousel lasts updadtes
         </div>
       </div>
     );

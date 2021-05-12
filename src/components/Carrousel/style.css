@@ -68,19 +68,6 @@
     transition: 0.5s;
 }
 
-<<<<<<< HEAD
-.all-carousell {
-    display: flex;
-    align-items: center;
-}
-
-.div-arrows {}
-
-#id-div-arrow-left {}
-
-#id-div-arrow-right {}
-
-=======
 .arrows-div{
     display: flex;
     background-color: #444;
@@ -92,7 +79,6 @@
     position: absolute;
 }
 
->>>>>>> carrousel lasts updadtes
 .section-carrousel-content {
     display: flex;
     justify-content: center;
@@ -194,10 +180,6 @@
     transition: 0.2s;
     color: #808080;
     z-index: 999;
-<<<<<<< HEAD
-=======
-
->>>>>>> carrousel lasts updadtes
 }
 
 .arrow-span-carrousel-left:hover {

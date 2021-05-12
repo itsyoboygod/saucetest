@@ -106,11 +106,7 @@ export default function Carrouseldrop() {
   // }
 
   return (
-<<<<<<< HEAD
-    <div className="dropdown" id="id-dropdown-wrap">
-=======
     <div className="dropdown" id="id-wrap-dropdown">
->>>>>>> carrousel lasts updadtes
       <span id="option-id" className="option">
         &#8942;
       </span>

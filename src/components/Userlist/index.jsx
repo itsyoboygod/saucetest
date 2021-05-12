@@ -8,8 +8,9 @@ const Listusers = () => {
       <ul>
         <li>
           <h1>name</h1>
-          <span> ! </span>
+          <div className="div-span-report-delete">
           <span>🗑</span>
+          </div>
         </li>
       </ul>
     </div>
