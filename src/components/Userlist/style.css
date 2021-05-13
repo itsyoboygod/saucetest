@@ -1,7 +1,26 @@
+
+#id-input-div-users-search{
+    width: 50% !important;
+    left: 24%;
+    position: fixed;
+    right: 50%;
+}
+
+#id-input-div-users-search form input{
+    background-color: #131313 !important;
+
+}
+
+#id-input-div-users-search form button{
+    box-shadow: none !important;
+}
+
+
 .users-list {
     /* width: 100%; */
     /* background-color: wheat; */
     display: flex;
+    margin-top: 100px;
     padding: 0;
     margin: 0;
     align-items: center;
@@ -10,6 +29,7 @@
 
 .title-list {
     width: 95%;
+    margin-top: 50px;
 }
 
 .users-list h1 {
