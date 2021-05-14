@@ -1,42 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+import Filter from "../Filter";
 import Infodelete from "../Infos/Infodelete/index.";
 import Inforeport from "../Infos/Inforeport/index.";
 import "./style.css";
+import JASONDATA from "../../mydata.json";
 
 const Listusers = () => {
-  //  state = {
-  //   users: [],
-  //   page: 1,
-  // };
-
-  // componentDidMount = () => {
-  //   this.loadUsers();
-  // }
-
-  // loadUsers = async (page = 1) => {
-  //   const response = (`/users?page=${page}`);
-
-  //   this.setState({users, page });
-  // };
-
-  // prevPage = () => {
-  //   const { page, users } = this.state;
-
-  //   if (page === 1) return;
-
-  //   const pageNumber = page - 1;
-
-  //   this.loadUsers(pageNumber);
-  // };
-  // nextPage = () => {
-  //   const { page, users } = this.state;
-
-  //   if (page === users.pages) return;
-
-  //   const pageNumber = page + 1;
-
-  //   this.loadUsers(pageNumber);
-  // };
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <>
@@ -47,6 +17,7 @@ const Listusers = () => {
             id="navtop-input-id"
             placeholder=" search user ..."
             type="search"
+            onChange={(event) => setSearchTerm(event.target.value)}
           />
           <button type="submit">Go</button>
         </form>
@@ -137,6 +108,7 @@ const Listusers = () => {
           </h2>
         </div>
       </div>
+      <Filter />
     </>
   );
 };

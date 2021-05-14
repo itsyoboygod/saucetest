@@ -47,25 +47,23 @@ function Filtersearch() {
           placeholder="search"
           onChange={(event) => setSearchTerm(event.target.value)}
         />
-        {api
-          .filter((val) => {
-            if (searchTerm == "") {
-              return val;
-            } else if (
-              val.first_name
-                .toLowerCase()
-                .includes(
-                  searchTerm
-                    .toLowerCase()
-                    .startsWith(setSearchTerm(val.first_name))
-                )
-            ) {
-              return val;
-            }
-          })
-          .map((val, key) => {
-            return <div className="names">{val.first_name}</div>;
-          })}
+        {JASONDATA.filter((val) => {
+          if (searchTerm == "") {
+            return val;
+          } else if (
+            val.first_name
+              .toLowerCase()
+              .includes(
+                searchTerm
+                  .toLowerCase()
+                  .startsWith(setSearchTerm(val.first_name))
+              )
+          ) {
+            return val;
+          }
+        }).map((val, key) => {
+          return <div className="names">{val.first_name}</div>;
+        })}
       </div>
     </div>
   );
