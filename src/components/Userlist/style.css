@@ -6,6 +6,7 @@
 }
 
 #id-input-div-users-search form input {
+    color: white;
     background-color: #131313 !important;
 }
 
@@ -52,6 +53,8 @@
 
 .users-list ul li a {
     text-decoration: none;
+    font-size: 2rem;
+    
 }
 
 .users-list li {
@@ -62,12 +65,12 @@
     border-bottom: solid 1px #8888;
 }
 
-.users-list li h1 {
+.users-list li a {
     color: white;
     font-family: monospace;
 }
 
-.users-list li h1:hover {
+.users-list li a:hover {
     cursor: pointer;
     opacity: 0.5;
     transition: 0.2s;
