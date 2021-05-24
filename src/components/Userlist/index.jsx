@@ -86,7 +86,7 @@ const Listusers = () => {
               }
             }).map((val, key) => {
               return (
-                <li>
+                <li className="li-users-list">
                   <a href="/Profile">{val.first_name}</a>
 
                   <div className="div-span-report-delete">
