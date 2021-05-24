@@ -4,29 +4,51 @@ import Infodelete from "../Infos/Infodelete/index.";
 import Inforeport from "../Infos/Inforeport/index.";
 import "./style.css";
 import JASONDATA from "../../mydata.json";
+import $ from "jquery";
 
 const Listusers = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const myFunction = () => {
-    // var input , filter, ul, li, a, i, txtValue;
-    // input = document.getElementById('#navtop-input-id');
-    // filter = input.value.toUpperCase();
-    // ul = document.getElementById("myUL");
-    // li = ul.getElementsByTagName("li");
-    // for (i = 0; i < li.length; i++) {
-    //     a = li[i].getElementsByTagName("a")[0];
-    //     txtValue = a.textContent || a.innerText;
-    //     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-    //         li[i].style.display = "";
-    //     } else {
-    //         li[i].style.display = "none !importatnt";
-    //     }
-    // }
-  }
-  
- 
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("#navtop-input-id");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none !importatnt";
+      }
+    }
+  };
 
+  var counter = 0;
+  $(window).scroll(function () {
+    if (
+      $(window).scrollTop() == $(document).height() - $(window).height() &&
+      counter < 2
+    ) {
+      appendData();
+    }
+  });
+  function appendData() {
+    var html = "";
+    for (var i = 0; i < 10; i++) {
+      html +=
+        '<p class="dynamic">Dynamic Data :  This is test data.<br />Next line.</p>';
+    }
+    $("#myScroll").append(html);
+    counter++;
+
+    if (counter == 2)
+      $("#myScroll").append(
+        '<button id="uniqueButton" style="margin-left: 50%; background-color: powderblue;">Click</button><br /><br />'
+      );
+  }
   return (
     <>
       <div className="input-div" id="id-input-div-users-search">
@@ -46,49 +68,39 @@ const Listusers = () => {
         <div className="title-list">
           <h1>Users list:</h1>
         </div>
-
-        <ul id="myUL">
-        {JASONDATA.filter((val) => {
-          if (searchTerm == "") {
-            return val;
-          } else if (
-            val.first_name
-              .toLowerCase()
-              .includes(
-                searchTerm
+        <div id="myScroll">
+          <ul id="myUL">
+            {JASONDATA.filter((val) => {
+              if (searchTerm == "") {
+                return val;
+              } else if (
+                val.first_name
                   .toLowerCase()
-                  .startsWith(setSearchTerm(val.first_name))
-              )
-          ) {
-            return val;
-          }
-        }).map((val, key) => {
-          return (
-          <li>
-            <a href="/Profile">
-            {val.first_name}
-            </a>
+                  .includes(
+                    searchTerm
+                      .toLowerCase()
+                      .startsWith(setSearchTerm(val.first_name))
+                  )
+              ) {
+                return val;
+              }
+            }).map((val, key) => {
+              return (
+                <li>
+                  <a href="/Profile">{val.first_name}</a>
 
-            <div className="div-span-report-delete">
-              <Inforeport />
-              <Infodelete />
-            </div>
-          </li>
-        
-        )
-      })}
-
-        </ul>
-        <div>
-          <h2>
-            scroll down to load more info <span>&#129147;</span>
-          </h2>
+                  <div className="div-span-report-delete">
+                    <Inforeport />
+                    <Infodelete />
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </>
   );
-
- 
 };
 
 export default Listusers;
