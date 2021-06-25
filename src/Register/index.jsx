@@ -1,24 +1,30 @@
 import { React, Component, useState } from "react";
 import { Link } from "react-router-dom";
+import Axios from "axios";
 
 import "./style.css";
+import { response } from "express";
 
 const Registerpanel = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState(false);
   const [password, setPassword] = useState("");
+  const [loginStatus, setloginStatus] = useState("");
 
-  const registerForm = (e) => {
-    console.log(e.target.value);
-    e.preventDefault();
+  const register = () => {
+    Axios.post("http://localhost:3000/Register", {
+      email: setEmail,
+      username: setUsername,
+      password: setPassword,
+    }).then((response) => {
+      if (response.data.message) {
+        setloginStatus(response.message);
+      } else {
+        setloginStatus(response);
+      }
+    });
   };
-
-  const registerUser = (e) => {
-    alert("User registred " + setUsername + { email } + gender);
-    registerForm.e.target = "";
-  };
-
   return (
     <div className="loginpanel-div">
       <div className="loginpanel-left">
@@ -26,13 +32,23 @@ const Registerpanel = () => {
       </div>
       <div className="loginpanel-right">
         <h1>Register</h1>
-        <form onChange={registerForm}>
-          <input type="text" placeholder="Email" className="text-input"></input>
+        <form>
+          <input
+            type="text"
+            placeholder="Email"
+            className="text-input"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          ></input>
           <input
             type="text"
             placeholder="Username"
             className="text-input"
-            name="email"
+            name="username"
+            onChange={(e) => {
+              setUsername(e.target.value);
+            }}
           ></input>
           <div className="radio-input">
             <input type="radio" name="gender" id="id-radio-input-male" /> Male
@@ -45,14 +61,11 @@ const Registerpanel = () => {
             placeholder="Password"
             className="text-input"
             name="password"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
           ></input>
-          {/* <select>
-            <option>test 1</option>
-            <option>test 2</option>
-            <option>test 3</option>
-            <option>test 4</option>
-          </select> */}
-          <button type="submit" onClick={registerUser}>
+          <button type="submit" onClick={register}>
             Register
           </button>
         </form>

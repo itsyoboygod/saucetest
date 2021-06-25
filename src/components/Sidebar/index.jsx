@@ -39,6 +39,10 @@ export default class Sidebar extends Component {
             <Inforeport />
           </li>
         </ul>
+        <div className="side-arrows">
+          <span className="">&#10092;</span>
+          <span className="">&#10093;</span>
+        </div>
       </div>
     );
   }

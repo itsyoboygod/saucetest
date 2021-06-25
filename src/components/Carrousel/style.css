@@ -86,9 +86,9 @@
 }
 
 
-.all-carrousel:hover {
+/* .all-carrousel:hover {
     cursor: grab;
-    }
+    } */
 
 .section-carrousel-content {
     display: flex;
@@ -100,7 +100,6 @@
     overflow: hidden;
     overflow-x: scroll;
 }
-
 
 ::-webkit-scrollbar {
     height: 10px;

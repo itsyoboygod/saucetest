@@ -8,16 +8,19 @@ Modal.setAppElement("#root");
 function Loginmodal() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
 
-  const loginForm =(e) =>{
-    console.log("formulario alterado!")
-    console.log(e.target.value)
-  }
-
-  const loginUser=()=>{
-    alert("User logado !")
-    loginForm.e.target = ""
-  }
-
+  const login = () => {
+    Axios.post("http://localhost:3000/Register", {
+      email: setEmail,
+      username: setUsername,
+      password: setPassword,
+    }).then((response) => {
+      if (response.data.message) {
+        setloginStatus(response.message);
+      } else {
+        setloginStatus(response);
+      }
+    });
+  };
   return (
     <div className="Login-panel">
       <button onClick={() => setmodalIsOpen(true)} id="myBtn-login">
@@ -34,7 +37,6 @@ function Loginmodal() {
           },
         }}
       >
-
         <div className="modal-login-content">
           <button id="btn-close-modal" onClick={() => setmodalIsOpen(false)}>
             &times;
@@ -63,7 +65,11 @@ function Loginmodal() {
                   type="password"
                 />
               </div>
-              <button type="submit" id="btn-add-post-modal-form" onClick={loginUser}>
+              <button
+                type="submit"
+                id="btn-add-post-modal-form"
+                onClick={loginUser}
+              >
                 <h4>Login</h4>
               </button>
             </form>

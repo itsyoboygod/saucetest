@@ -115,3 +115,25 @@
     visibility: visible;
     opacity: 1;
 }
+
+.side-arrows {
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    border: solid 1px #8888;
+    margin-left: -7px;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.side-arrows span {
+    font-size: 2rem;
+    color: #808080;
+}
+
+.side-arrows span:first-child:hover,
+.side-arrows span:last-child:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+}

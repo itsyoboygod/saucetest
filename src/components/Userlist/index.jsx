@@ -4,6 +4,7 @@ import Infodelete from "../Infos/Infodelete/index.";
 import Inforeport from "../Infos/Inforeport/index.";
 import "./style.css";
 import JASONDATA from "../../mydata.json";
+import userset from "../../user.json";
 import $ from "jquery";
 
 const Listusers = () => {
@@ -46,13 +47,13 @@ const Listusers = () => {
 
     if (counter == 2)
       $("#myScroll").append(
-        '<h1>BRUH</h1>'
+        "<h1>BRUH</h1>"
         // '<button id="uniqueButton" style="margin-left: 50%; background-color: powderblue;">Click</button><br /><br />'
       );
 
-      if (counter == 3)
+    if (counter == 3)
       $("#myScroll").append(
-        '<h1>BRUH</h1>'
+        "<h1>BRUH</h1>"
         // '<button id="uniqueButton" style="margin-left: 50%; background-color: powderblue;">Click</button><br /><br />'
       );
   }
@@ -94,7 +95,10 @@ const Listusers = () => {
             }).map((val, key) => {
               return (
                 <li className="li-users-list">
-                  <a href="/Profile">{val.first_name}</a>
+                  <a href="/Profile">
+                    {val.first_name}
+                    {/* {userset.user.PK} */}
+                  </a>
 
                   <div className="div-span-report-delete">
                     <Inforeport />
