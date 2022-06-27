@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
+import Axios from 'axios';
 import { Link } from "react-router-dom";
 import "./style.css";
 
@@ -8,19 +9,19 @@ Modal.setAppElement("#root");
 function Loginmodal() {
   const [modalIsOpen, setmodalIsOpen] = useState(false);
 
-  const login = () => {
-    Axios.post("http://localhost:3000/Register", {
-      email: setEmail,
-      username: setUsername,
-      password: setPassword,
-    }).then((response) => {
-      if (response.data.message) {
-        setloginStatus(response.message);
-      } else {
-        setloginStatus(response);
-      }
-    });
-  };
+  // const login = () => {
+  //   Axios.post("http://localhost:3000/Register", {
+  //     email: setEmail,
+  //     username: setUsername,
+  //     password: setPassword,
+  //   }).then((response) => {
+  //     if (response.data.message) {
+  //       setloginStatus(response.message);
+  //     } else {
+  //       setloginStatus(response);
+  //     }
+  //   });
+  // };
   return (
     <div className="Login-panel">
       <button onClick={() => setmodalIsOpen(true)} id="myBtn-login">
@@ -43,7 +44,8 @@ function Loginmodal() {
           </button>
           <div id="modal-login">
             <h1>LOGIN</h1>
-            <form onChange={loginForm}>
+            {/* <form onChange={loginForm}> */}
+            <form>
               <div className="input-div-modal-login">
                 <input
                   id="id-login-email"
@@ -68,7 +70,7 @@ function Loginmodal() {
               <button
                 type="submit"
                 id="btn-add-post-modal-form"
-                onClick={loginUser}
+                // onClick={loginUser}
               >
                 <h4>Login</h4>
               </button>

@@ -12,19 +12,19 @@ const Registerpanel = () => {
   const [password, setPassword] = useState("");
   const [loginStatus, setloginStatus] = useState("");
 
-  const register = () => {
-    Axios.post("http://localhost:3000/Register", {
-      email: setEmail,
-      username: setUsername,
-      password: setPassword,
-    }).then((response) => {
-      if (response.data.message) {
-        setloginStatus(response.message);
-      } else {
-        setloginStatus(response);
-      }
-    });
-  };
+  // const register = () => {
+  //   Axios.post("http://localhost:3000/Register", {
+  //     email: setEmail,
+  //     username: setUsername,
+  //     password: setPassword,
+  //   }).then((response) => {
+  //     if (response.data.message) {
+  //       setloginStatus(response.message);
+  //     } else {
+  //       setloginStatus(response);
+  //     }
+  //   });
+  // };
   return (
     <div className="loginpanel-div">
       <div className="loginpanel-left">
@@ -65,7 +65,8 @@ const Registerpanel = () => {
               setPassword(e.target.value);
             }}
           ></input>
-          <button type="submit" onClick={register}>
+          {/* <button type="submit" onClick={register}> */}
+          <button type="submit">
             Register
           </button>
         </form>
